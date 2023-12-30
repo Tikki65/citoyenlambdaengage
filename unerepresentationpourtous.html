@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<div id="bloc_page">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+			<meta name="description" content="Système électoral - Vote blanc - Election - Discrimination - Représentation">
+			<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+			<link rel="stylesheet" href="style.css" />
+			<title>Notre système électoral, qu'en penser ?</title>
+		</head>
+		<header class="header">
+			<img id="logo" src="images/LogoSmallCLE.png" alt="Son logo"/>
+		
+			<input type="checkbox" id="check">
+			<label for="check" class="icons">
+			  <i class='bx bx-menu' id="menu-icon"></i>
+			  <i class='bx bx-x' id="close-icon"></i>
+			</label>
+			 
+			<nav class="navbar">  
+				<a href="index.html">Accueil</a>
+				<a href="constat.html">Constat</a>
+				<a href="obligationvote.html">Obligation de vote</a>
+				<a href="attribution.html">Attribution des sièges</a><br>
+				<a href="laloi.html">Que dit la loi ?</a>
+				<a href="propositions.html">Propositions</a>
+				<a href="experts.html">Qu'en disent les experts ?</a><br>
+				<a href="conclusion.html">Conclusion provisoire</a>
+				<a href="initiatives.html">Initiatives citoyennes</a>
+				<a href="info.html">Documentation</a>
+			</nav>
+		  </header>
+		Temps de lecture : 1 min 10 sec.
+		<body>
+		<p>Abstract :<br>
+			La démocratie est dite en déclin. Une Commission du Renouveau démocratique, de la Citoyenneté et des Affaires internationales a été mise en place
+			au niveau du Parlement fédéral afin de ré enchanter la démocratie. En Région wallonne, un commission Spéciale Renouveau démocratique a également
+			vu le jour, afin d'avancer d'un grand pas - voire d'atterrir - sur un débat plus complexe que prévu : faire de la Wallonie la première région du
+			pays à instaurer la consultation populaire(1 Article du 22 janvier 2016. La Région wallonne veut être la première à instaurer la CONSULTATION POPULAIRE,
+			mais ça semble plus compliqué que prévu - RTL Info).<br><br>
+			L’idée est donc ici de proposer une autre réflexion. Pourquoi ne pas corriger la représentation incomplète de l’électorat induite par les règles
+			internes de notre système électoral ? Ce travail propose une piste de remédiation qui consisterait en la représentation des votes blancs et de la
+			mettre en débat.<br><br>
+
+			Remerciements<br>
+			Je tiens à remercier les différentes universités et ses membres éminents qui ont permis la mise en place de ce Certificat en Démocratie
+			participative. La formation a été riche en enseignements et les échanges nombreux et enrichissants, tant sur le plan humain que sur le plan
+			académique.<br><br>
+			Je remercie également les personnes qui m’ont accompagnées tout au long de ce travail : mon promoteur Monsieur Jérémy Dodeigne, professeur en
+			Sciences Politiques à l’Université de Namur, pour son accueil, son écoute, ses conseils de lectures et les mises en perspectives de ce travail ;
+			ma fille Alice Dumont, chercheuse au Centre de Recherches en Économie Régionale et Politique Économique (CERPE) à l’université de Namur, qui m’a
+			permis de compiler les résultats empiriques de ce travail à l’aide de fonctions et autres macros Excel en quelques clics ; les personnes
+			ressources qui ont accepté de jouer le jeu de l’interview ; celles et ceux qui ont accepté de relire ce travail afin d’en dénicher les
+			incohérences de langage et autres erreurs orthographiques ; enfin mon épouse, pour sa patience durant ces longues heures d’absence passées à la
+			lecture et à l’écriture de ce travail.<br><br>
+			Ce travail est in fine un travail collectif articulé par ma personne. J’ose espérer qu’il permettra d’ouvrir un espace de dialogue et de débat
+			sur la nécessité d’offrir à chaque individu en âge de voter la possibilité d’être représenté au sein de nos différentes assemblées.<br><br>
+
+			Table des matières<br>
+			1	Introduction	5<br>
+			2	Qu’est-ce que la démocratie ?	5<br>
+			2.1	Que disent les textes fondateurs et les textes de lois au sujet de ce qu’est une démocratie ?	6<br>
+			2.2	Petite histoire du droit de vote	7<br>
+			2.3	Notre système électoral	7<br>
+			2.3.1	Comment se déroule une élection de manière générale ?	7<br>
+			2.3.2	Que signifie voter et quelle en est la conséquence ?	8<br>
+			2.3.3	Que deviennent les bulletins une fois l’élection terminée ?	8<br>
+			2.3.4	Comment s’effectue la distribution des sièges ?	9<br>
+			2.3.4.1	Comment se pratique la clé Impériali	9<br>
+			2.3.5	De l’acceptation d’un processus	10<br>
+			3	Qu’en est-il de la représentation ?	10<br>
+			4	De la légitimité du système.	10<br>
+			Remise en question de la légitimité du système. A tort ou à raison ?	11<br>
+			4.1	Etude d’un cas	12<br>
+			5	De l’intérêt général.	14<br>
+			6	Et la discrimination.	14<br>
+			7	Piste d’amélioration	15<br>
+			7.1	Premier argument :	16<br>
+			7.2	Second argument :	16<br>
+			7.3	Un contre-argument :	17<br>
+			7.4	Pourquoi représenter le vote blanc au niveau communal ?	17<br>
+			7.5	De quelles autres manières le vote blanc pourrait-il être représenté ?	17<br>
+			7.6	Que disent les chiffres ?	17<br>
+			7.6.1	Décrivons tout d’abord, la méthodologie utilisée pour obtenir ces chiffres.	18<br>
+			7.6.2	Où se concentre le vote non-valable ?	19<br>
+			7.6.3	Combien de communes seraient impactées, en termes de distribution des sièges, si le vote blanc était représenté ?	21<br>
+			7.7	Quels seraient les avantages et inconvénients d’une représentation des votes blancs ?	22<br>
+			7.7.1	Avantages	22<br>
+			La représentation du vote blanc	22<br>
+			7.7.2	Inconvénients :	22<br>
+			La représentation du vote blanc conduit à	22<br>
+			7.8	Avantages et inconvénients d’une telle proposition (avis d’Experts)	23<br>
+			7.8.1	Rencontre avec Monsieur Benjamin Biard, docteur en Sciences Politiques et chercheur au CRISP, le 07 avril 2022.	23<br>
+			7.8.2	Rencontre avec Monsieur Pierre Verjans, politologue à l’Université de Liège, le 03 mai 2022.		23<br>
+			7.8.3	Rencontre avec Madame Anne Pirson, première échevine responsable de la Citoyenneté au sein de la Commune de Ciney, le18 mai 2022.	23<br>
+			7.8.4	Rencontre avec France Masay, députée ECOLO cooptée depuis 2019 et conseillère communale de la Commune de Ciney, accompagnée de Célia Nennen,
+			conseillère politique « Démocratie et Institutionnel » chez ECOLO, le 20 mai 2022.	23<br>
+			7.8.5	Rencontre avec Monsieur Vincent de Coorebyter, titulaire de la chaire de Philosophie sociale et politique contemporaine à l’ULB et
+			président du CRISP ,le 09 juin 2022.	24<br>
+			7.9	Le questionnement de Monsieur et Madame Tout-le-monde	25<br>
+			8	Comment s’y prendre pour concrétiser cette proposition ?	27<br>
+			9	Conclusion provisoire.	28<br><br>
+
+			1	Introduction<br>
+			Le gouvernement fédéral a lancé une plateforme participative en ligne, en vue de récolter l’avis de la population au sujet d’une 7ème réforme de
+			l’Etat. Il apparaît donc utile de s’interroger sur les conditions qui ont fait émerger ce besoin de consultation citoyenne.<br><br>
+			Il n’est pas rare de lire des articles de presses ou même des études académiques qui ne commencent par nous dire que la démocratie est en déclin,
+			que la population perd peu à peu confiance en ce système de gouvernance représentative. Une Commission du Renouveau démocratique, de la
+			Citoyenneté et des Affaires internationales est mise en place au sein du Sénat et travaille à ré enchanter la démocratie. Une commission spéciale
+			du Renouveau Démocratique a également été mise en place au sein du Parlement de Wallonie. Mais voilà, comment faire pour redynamiser ce
+			système ?<br><br>
+			A l’entame de ce travail, je chercherai à comprendre ce qui se cache derrière des notions phares telles que : démocratie, représentation,
+			légitimité, intérêt général, discrimination, etc… Ces termes vont entourer nos discussions relatives à notre modèle démocratique.<br><br>
+			Dans cette réflexion, il sera question de discuter des mécanismes internes du système électoral, ce dernier mettant en place ceux qui décident;
+			ainsi que de relever ses éventuels manquements afin de proposer une piste d’amélioration et d’en étudier les effets.<br><br>
+			Comme vous l’aurez compris, il ne sera pas vraiment question de travailler sur la démocratie participative en tant que telle, au travers de la
+			mise en place de commissions délibératives par exemple ou de tout autre processus, mais plutôt de proposer une manière différente d’entrevoir
+			la participation citoyenne en la rendant structurelle au sein du système électoral.<br><br>
+			Avec la compilation des résultats des élections communales de 2006, 2012 et de 2018, nous allons découvrir comment : lire les résultats d’une
+			élection ; comprendre le mécanisme de la distribution des sièges ; comprendre les effets de la non-prise en compte de certains types de vote lors
+			de la distribution des sièges et également comprendre les effets inverses si d’aventure ils venaient à être pris en compte.<br><br>
+			L’idée ultime tend à proposer une piste de réflexion autour d’une représentation pour tous, en venant compléter l’offre politique par la
+			représentation du vote blanc et de la mettre en débat. Ceci, afin de faire entendre une voix que l’on n’entend pas ou peu dans nos Conseils et
+			autres Assemblées.<br><br>
+			2	Qu’est-ce que la démocratie ?<br>
+			Définir la démocratie n’est pas chose aisée. Les dictionnaires courants nous renvoient à une définition qui semble ne pas correspondre à ce que
+			nous vivons. Aussi surprenant que cela puisse paraître, le terme même « démocratie » n’apparaît pas dans le texte de notre Constitution, ni sur
+			les pages officielles du site Internet « belgium.be ». Dès lors, sur quels critères pouvons-nous nous baser pour tenter de la définir ? La
+			démocratie, telle que chacun se l’imagine, ne serait-elle tout simplement pas qu’ « une histoire de malentendu »  ?<br><br>
+			Selon Vincent de Coorebyter , « Les systèmes de démocraties tels que nous les connaissons aujourd’hui sont le fruit de luttes et de révolutions
+			populaires menées en France, au Etats-Unis et en Angleterre, par les populations de ces pays, à l’encontre d’anciens régimes monarchiques. A
+			cette époque, ce peuple révolutionnaire était composé de paysans et d’ouvriers peu instruits, ne sachant pour la plupart ni lire ni écrire, mais
+			capable de colère et de révolte ». Il fallait donc créer un système, comme écrit dans le rapport « Refaire la démocratie »  et reprenant les mots
+			de Bernard Manin , qui permette « de contenir et d’encadrer la démocratie et non de l’accomplir ». « Ce peuple naissant était certes un nouvel
+			acteur, mais il faisait peur aux nouvelles élites » . C’est pourquoi, « les systèmes de démocratie représentative établis à l’époque, qui se
+			présentent le plus souvent comme une alternative parlementaire et constitutionnelle aux monarchies d’Ancien Régime, ne sont pas pleinement
+			démocratiques »  .<br><br>
+			Le dictionnaire politique du CRISP  nous définit la démocratie en ces mots : « Régime dans lequel la souveraineté politique appartient aux citoyens,
+			qui l'exercent soit directement, soit indirectement par la voie d'élections libres. Ce type de société est basé sur les principes de liberté et
+			d'égalité des citoyens devant la loi. »<br><br>
+			2.1	Que disent les textes fondateurs et les textes de lois au sujet de ce qu’est une démocratie ?<br>
+			a.	La Constitution belge  :<br>
+			1.	Art.33<br>
+			Tous les pouvoirs émanent de la Nation.<br>
+			Ils sont exercés de la manière établie par la Constitution.<br>
+			2.	Art.42<br>
+			Les membres des deux Chambres représentent la Nation, et non uniquement ceux qui les ont élus.<br>
+			3.	Art. 62<br>
+			La constitution des collèges électoraux est réglée par la loi.<br>
+			Les élections se font par le système de représentation proportionnelle que la loi détermine.<br>
+			Le vote est obligatoire et secret. Il a lieu à la commune, sauf les exceptions à déterminer par la loi.<br>
+			b.	La Déclaration universelle des droits de l’homme , dans son article 21 :<br>
+			1.	Toute personne a le droit de prendre part à la direction des affaires publiques de son pays, soit directement, soit par l'intermédiaire de
+			représentants librement choisis.<br>
+			2.	Toute personne a droit à accéder, dans des conditions d'égalité, aux fonctions publiques de son pays.<br>
+			3.	La volonté du peuple est le fondement de l'autorité des pouvoirs publics; cette volonté doit s'exprimer par des élections honnêtes qui doivent
+			avoir lieu périodiquement, au suffrage universel égal et au vote secret ou suivant une procédure équivalente assurant la liberté du vote.<br>
+			Ce serait donc par l’existence d’élections libres, au suffrage universel et au vote secret que l’on reconnaît une démocratie.<br>
+			2.2	Petite histoire du droit de vote<br> 
+			L’histoire de la démocratie, c’est donc aussi un peu l’histoire du droit de vote. Retenons que ce dernier et le droit d’éligibilité ne seront pas
+			accordés à tous les citoyens dès la mise en place de ce nouveau modèle démocratique basé sur la représentation. Ils seront réservés à une toute
+			petite partie de la population ; des hommes fortunés, ayant une situation confortable et diplômés.<br><br>
+			Nous pourrions développer ici toutes les améliorations qui ont été apportées à notre système électoral, mais retenons que les règles initiales de
+			ce système ont évolué constamment.<br><br>
+			Notre système est donc en évolution perpétuelle.<br><br>
+			2.3	Notre système électoral<br> 
+			« Les éléments fondamentaux du système électoral belge sont fixés par la Constitution :<br><br>
+			-	Les élections se font au suffrage universel ;<br>
+			-	Le principe de la représentation proportionnelle  est appliqué ;<br>
+			-	Chaque électeur a une voix ;<br>
+			-	Le vote est secret ;<br>
+			-	Le vote est obligatoire ;<br>
+			-	Le vote a lieu à la commune.<br><br>
+			Ces éléments sont complétés par un ensemble de lois et d’arrêtés réglementaires généraux ou spécifiques concernant les élections<br><br>.
+			Trois types d’élections sont organisés en Belgique :<br>
+			-	Les élections fédérales pour élire les membres de la Chambre des Représentants ;<br>
+			-	Les élections régionales et communautaires (européennes) pour élire les membres des différents parlements ;<br>
+			-	Les élections des conseils provinciaux et communaux pour élire les membres de ces conseils ».<br><br>
+			2.3.1	Comment se déroule une élection de manière générale ?<br>
+			En amont des élections, les partis se mettent en ordre de bataille. Ils constituent leur liste respective de candidats qui défendront, lors 
+			de différents débats, la position de leur parti durant une campagne électorale. Quelques semaines avant les élections, les électeurs reçoivent
+			une convocation les invitant à se rendre au bureau de votes qui leur est attribué afin de participer, le jour voulu, à l’élection des différents
+			membres des parlements et autres conseils provinciaux et conseils communaux. Suite à la proclamation des résultats, des discussions entre chefs
+			de listes ou présidents de partis se mettent en place à l’initiative de ceux qui ont remportés le plus grand nombre de sièges, afin de trouver
+			des convergences entre les partis et leurs différents programmes électoraux, dans le but final de former des majorités qui gouverneront : la
+			Commune, la Province, la Région ou l’Etat fédéral durant une mandature.<br><br>
+			2.3.2	Que signifie voter et quelle en est la conséquence ?<br>
+			D’une part, voter signifie pour l’électeur, le fait de se déplacer de son domicile vers le bureau de vote lui étant attribué, de s’y présenter
+			avec sa convocation et sa carte d’identité, de recevoir le bulletin de vote, de se rendre dans l’isoloir pour y effectuer un choix, de déposer
+			le(s) bulletin(s) reçu(s) dans l’urne adéquate et de récupérer sa convocation oblitérée du sceau communal ainsi que sa carte d’identité.<br><br>
+			D’autre part, le vote étant secret, mille significations sont possibles quant au choix d’une liste, d’un candidat ou du choix de ne pas choisir
+			(qualifié de vote-blanc). Ce qui importe, c’est connaître la conséquence de son choix.<br><br>
+			•	L’électeur vote pour un parti ou liste électorale, pour un ou plusieurs candidats d’une même liste : son vote est considéré comme valable et
+			est pris en compte lors de la distribution des sièges.<br>
+			•	L’électeur vote pour plusieurs listes ou candidats de listes différentes, un vote appelé panachage : son vote est considéré comme nul ou
+			non-valable et il n’en est pas tenu compte lors de la distribution des sièges.<br>
+			•	L’électeur effectue des ratures sur le bulletin de vote. S’il le remet tel que dans l’urne : son vote sera considéré comme nul et il n’en sera
+			pas tenu compte lors de la distribution des sièges. Cependant, s’il se rend compte de sa bévue, il peut demander à recevoir un nouveau bulletin
+			de vote vierge et de faire annuler par le président du bureau de vote, le bulletin de vote ne reflétant pas son choix.<br>
+			•	L’électeur n’exprime aucun choix parmi les listes ou parmi les candidats : son vote, appelé vote blanc, est considéré comme non-valable. Ce
+			dernier ne sera pas pris en compte lors de la distribution des sièges.<br>
+			•	L’électeur ne se déplaçant pas pour voter, est considéré comme absentéiste  et participe de la sorte à ce que l’on appelle l’absentéisme
+			électoral. Il est passible d’une amende administrative car il n’a pas effectué son devoir citoyen envers l’obligation de vote. Sa voix ainsi non
+			exprimée est considérée comme un vote non-valable et ne sera pas pris en compte lors de la distribution des sièges.<br><br>
+			2.3.3	Que deviennent les bulletins une fois l’élection terminée ? <br>
+			A la fin de l’élection, toute une administration des bulletins est mise en place. Les urnes sont scellées. Les bulletins vierges restants sont
+			comptabilisés et placés dans des enveloppes scellées également. Le tout sera acheminé au bureau de dépouillement. Dès réception des urnes, le
+			président de bureau vérifie si les scellés sont toujours présents et s’assure que tout est en ordre administrativement. Ensuite, les scellés sont
+			enlevés, et sont triés : d’une part, les votes valables répartis par liste électorale, d’autre part, les votes non-valables, mais également des
+			votes litigieux dont les membres du bureau de dépouillement devront déterminer, au cas par cas, leur validité. Le nombre de bulletins attribués
+			à chaque liste est compté. Ce nombre constituera le chiffre électoral de la liste et permettra d’effectuer la répartition des sièges. Ensuite un
+			comptage des voix obtenues par candidat et par liste est effectué afin de permettre l’attribution des sièges au sein de la liste. Une fois ce
+			décompte effectué, les bulletins sont mis à nouveau sous scellé dans des enveloppes séparées pour archivage ou recomptage en cas de
+			litige.<br><br>
+			2.3.4	Comment s’effectue la distribution des sièges ?<br>
+			Selon le niveau de l’élection, une clé de répartition des sièges est utilisée. Pour les élections communales, il s’agit de la clé Impériali. Pour
+			les autres niveaux d’élection, c’est la clé D’Hondt qui est d’usage.<br><br>
+			2.3.4.1	Comment se pratique la clé Impériali  ?<br>
+			Le chiffre électoral de chaque liste, c’est-à-dire l’ensemble des votes valables obtenus par une liste, est divisé par 2, puis par 3, 4, etc… Les
+			quotients les plus élevés, toutes listes confondues, sont retenus au nombre de sièges à attribuer, et sont identifiés selon la liste à laquelle
+			ils appartiennent. L’exemple ci-dessous facilite la compréhension. Imaginons une Commune, comptabilisant 10.000 votes valables aux élections, et
+			caractérisée par 3 listes électorales se disputant 15 sièges. Ces dernières auraient obtenu le nombre de votes valables suivants : 1000 pour la
+			première, 3000 pour la deuxième et enfin 6000 pour la dernière. Selon la clé de distribution Impériali, les sièges obtenus se répartiraient comme
+			illustré dans ce tableau :<br>
+				Liste 1	Liste 2	Liste 3
+			Chiffre électoral	1000	3000	6000
+			Diviseur :	Quotients :	Quotients :	Quotients :
+			2	500	1500	3000
+			3	333	1000	2000
+			4	250	750	1500
+			5	200	600	1200
+			6	167	500	1000
+			7	143	429	857
+			8	125	375	750
+			9	111	333	667
+			10	100	300	600
+			Nombre de sièges	1	5	9<br><br>
+
+			2.3.4.2	Quelle différence avec la clé D’Hondt ?<br>
+			La différence entre les deux clés de répartition, Impériali et D’Hondt, est la suivante : la clé de répartition Impériali divise le chiffre
+			électoral par 2, 3, 4, etc. ; la clé D’Hondt divise le chiffre électoral par 1, 2, 3, etc… « Cela a pour effet de ne pas fragmenter outre
+			mesure le paysage électoral. Comparé au système D’Hondt, le système Impériali favorise les listes ayant obtenu le plus grand nombre de
+			voix » .<br><br>
+			2.3.4.3	Qu’en est-il du seuil électoral ?<br>
+			Notons que le seuil électoral n’entre pas en ligne de compte pour les élections communales, mais uniquement pour les autres niveaux de pouvoirs.
+			Il s’agit du pourcentage de votes valables nécessaires, fixé à 5% en Belgique, pour participer à l’attribution des sièges. « Il est utilisé pour
+			éviter qu'une assemblée élue à la proportionnelle comporte des représentants de nombreux partis, ce qui fragmente le paysage politique. Pour ses
+			adversaires, il sert surtout à écarter artificiellement certains partis des assemblées, voire à les pousser à fusionner avec des partis plus
+			importants ou à présenter des candidats sur les listes des partis importants (listes de cartel) » .<br><br>
+			2.3.5	De l’acceptation d’un processus<br>
+			Il semble que les mécanismes mis en place nous conduisent à une légitimation du pouvoir obtenu par les listes majoritaires ou les coalitions lors
+			d’une élection. Ils ont joué le jeu, se sont présentés aux élections sur base d’un programme, l’ont argumenté tout au long de la campagne
+			électorale pour récolter un certain nombre de voix. Le nombre de sièges obtenus est suffisamment élevé que pour pouvoir être consultés afin
+			de former au besoin une coalition remportant une majorité de sièges. Que dire de plus ?<br><br>
+			3	Qu’en est-il de la représentation ?<br>
+			Une fois élus, de quoi nos représentants sont-ils en charge ? Sont-ils de simples gestionnaires d’intérêts publics ou sont-ils censés incarner
+			la volonté du peuple ? De quelle représentation parlons-nous ?<br><br>
+			Selon Vincent de Coorebyter , la représentation politique a également évolué dans le temps. Je cite : « Il semble aujourd’hui hors de doute que
+			les représentants sont élus pour traduire la volonté de la population, pour concrétiser ses choix politiques, chaque membre de la nation ayant
+			un droit à être représenté à l’égal de tous les autres. Au XIXème siècle au contraire, une autre vision de la représentation concurrençait
+			celle-ci. Selon cette vision, la représentation est une fonction de gestion collective, et l’élection sert à sélectionner certaines personnes
+			parmi les élites qui ont les capacités nécessaires pour exercer cette fonction. Cette conception, qui permet de réserver le droit de vote et
+			d’éligibilité aux élites instruites ou fortunées, ne fait pas de l’élection un acte de souveraineté populaire, ne reconnaît pas un droit des
+			citoyens à voir leurs attentes reflétées dans la composition du pouvoir législatif et exécutif. On exige au contraire des représentants de ne
+			pas se sentir liés par l’élection, d’être indépendants par rapport aux représentés, de prendre des décisions sur base de discussions argumentées,
+			éclairées et raisonnables, qui provoquent un écart nécessaire entre la volonté populaire et la décision politique. Dans cette conception,
+			l’élection est un système de sélection des dirigeants et non un transfert de volonté ; comme l’écrit Georges Burdeau, « la représentation
+			intervient comme correctif de la démocratie ». Le système représentatif permet d’éviter que le peuple fasse la loi. »<br><br>
+			4	De la légitimité du système.<br>
+			Comment peut-on expliquer qu’il y ait encore, malgré l’existence d’élections libres, honnêtes et régulières, tant de déçus, tant de personnes qui
+			ne se sentent pas entendues par le système ? Comment expliquer toutes ces manifestations, ces grèves ? Notre système électoral contiendrait-il
+			des vices cachés ? Selon Pierre Rosanvallon  (dans le Rapport nr 3100 – Refaire la démocratie) , « la démocratie souffre des dysfonctionnements
+			des mécanismes de représentation, maladie qu’il nomme mal-représentation ». Tandis que pour Stef Steyaert , dans son audition à la Chambre des
+			Représentants de Belgique, il nous dit que « la démocratie n’est pas en crise, mais en transition ». Il plaide pour le maintien de la démocratie
+			représentative mais sous une forme différente. Stef Steyaert ne contredit d’ailleurs pas Bernard Manin  qui nous dit : « Il s’agit d’un système
+			plastique, qui n’a cessé d’évoluer depuis le XVIIIe siècle pour répondre aux attentes des citoyens. » Nous voici donc en pleine transition
+			démocratique.<br><br>
+			Mais revenons-en à la légitimité. Que signifie-t-elle vraiment ? Selon le dictionnaire Le Robert, la légitimité est l’« état de ce qui est
+			légitime ou considéré comme tel ». Dans sa définition littéraire, la légitimité est une qualité de ce qui est juste, équitable. Comme synonyme,
+			le mot bien-fondé est proposé. Selon le dictionnaire Larousse, la légitimité est définie comme la « qualité de ce qui est fondé en droit, en
+			justice ou en équité ». Selon Wikipédia : « la légitimité repose sur une autorité qui est fondée sur des bases juridiques ou sur des bases
+			éthiques ou morales, et permet de recevoir le consentement des membres d’un groupe. La légitimité devant donc être différenciée de la légalité
+			car certains problèmes d’équité ne peuvent être traités efficacement dans le cadre strict du droit ».<br><br>
+			Est-ce donc sur les plans de l’éthique et de l’équité que notre système serait pris en défaut ?<br><br>
+			Remise en question de la légitimité du système. A tort ou à raison ?<br>
+			Qu’en est-il de la légitimité de notre système électoral lorsqu’il ne permet pas une représentation pour tous ? Quid de la légitimité de notre
+			système lorsqu’il permet la formation de majorité n’obtenant pas la majorité des voix de l’électorat ? Quid de la légitimité de notre système
+			quand il introduit une différenciation de traitement entre les votes valables et les votes blancs alors que tous deux répondent à l’obligation
+			de vote ? Quid de la légitimité du système lorsqu’il comptabilise d’une même manière les votes blancs et votes nuls alors que leur signification
+			est différente ?<br><br>
+			Un doute profond s’installe dans ma tête de citoyen lambda, quant à la légitimité de notre système électoral. Tout cela ne m’apparaît pas
+			soutenable pour la stabilité de notre démocratie.<br><br>
+			
+			4.1	Etude d’un cas<br>
+			L’étude de cas vise à mettre en évidence un biais, pour in fine proposer une alternative à la comptabilisation actuelle des voix.<br>
+			Le tableau ci-dessous présente le résultat des élections d’une commune anonyme , une année donnée, afin de mettre en lumière ici un biais de
+			représentation.<br>
+			TABLEAU A AJOUTER<br><br>
+			
+			Dans le tableau ci-dessus, la première colonne chiffrée représente le numéro d’identification des listes. La deuxième colonne représente le
+			nombre de voix obtenues respectivement par chacune d’entre-elles , et la troisième colonne, indique le nombre de voix obtenues lors de l’élection
+			précédente. La quatrième colonne représente le pourcentage de voix de la liste et la cinquième, le pourcentage de voix de l’élection précédente .
+			L’avant-dernière colonne met en évidence la progression ou la régression de la liste entre les deux années d’élections. Enfin, la dernière
+			colonne indique le nombre de sièges obtenus par chaque liste aux dernières élections. Pour les quatre labels du bas du tableau, le nombre de la
+			première colonne chiffrée est celui de l’élection qui vient de se dérouler, le second celui de l’élection précédente. Il en va de même pour les
+			pourcentages annoncés.<br><br>
+			Lors de cette élection communale, suite à l’application de la distribution des sièges selon la clé Impériali (voir sous-section 5.4.1), la liste
+			numéro 11 a obtenu 13 des 25 sièges à attribuer avec 46,67 % des voix.<br><br>
+			Le biais de représentation est donc le suivant : avec ce système de distribution des sièges, une liste électorale peut remporter une majorité de
+			sièges tout en ayant obtenu une minorité de voix. Ceci est rendu possible parce que les votes considérés comme non-valables ne sont pas pris en
+			compte lors de la distribution des sièges.<br><br>
+			Dans le tableau suivant, toujours pour le même cas, voici une grille de lecture augmentée :<br>
+			TABLEAU A AJOUTER<br><br>
+			
+			Dans ce cas de figure, ce sont 2195 voix soit (18 %) de l’électorat qui sont évincées du système et qui ne seront pas représentées au sein du
+			futur Conseil communal.<br><br>
+			La liste numéro 11 a obtenu une majorité des sièges en ne représentant seulement en réalité que 38,28 % de l’électorat, soit 4.674 voix sur
+			les 12.209 inscrits. La situation pourrait encore s’aggraver si d’aventure, le nombre de votes considérés comme non-valables s’amplifiait. En
+			effet, plus le nombre de votes considérés comme non-valables est important, plus la proportion de votes nécessaires pour obtenir une majorité
+			de sièges est faible. Et la loi électorale ne spécifie aucune limite à cette situation.<br><br>
+			Quid de la légitimité de cette majorité qui de fait, ne représente qu’une portion minoritaire de l’électorat ?<br><br>
+
+			5	De l’intérêt général.<br>
+			Notre système électoral est basé sur des principes de compétition. Bien que le système de la représentation proportionnelle, contrairement au
+			scrutin majoritaire, favorise le multipartisme et la fragmentation des assemblées en de nombreuses formations politiques .  Il cherche à mettre
+			en place des majorités avec un minimum de partis représentés pour mieux imprimer leurs visions sur la manière de répondre aux enjeux de notre
+			société. Mais est-ce dans l’intérêt général de la Nation ou dans l’intérêt du jeu politique ?<br><br>
+			Lorsque l’on regarde les règles internes de notre système électoral, nous ne pouvons pas dire qu’il est ouvert à l’émergence de nouveaux partis
+			ou de listes électorales, ni qu’il tend à la représentation de tout un chacun. Par exemple, le fait de devoir récolter un certain nombre de
+			signatures afin de déposer une liste électorale lors de élections ou par la mise en place d’un seuil électoral ou encore par l’application d’une
+			clé de répartition comme la clé Impériali au niveau communal, n’aide pas au renouveau démocratique. Il le permet certes, mais ne facilite pas la
+			tâche de ceux qui veulent tenter d’apporter leur pierre à l’édifice.<br><br>
+			Selon Vincent de Coorebyter , « La manière dont les lobbies revendiquent leur contribution à une authentique démocratie participative peut donc
+			trouver ses lettres de noblesse chez Rousseau. Il n’est possible d’atteindre l’intérêt général que si toutes les composantes du corps social
+			participent à la délibération, que si toutes les volontés particulières s’expriment et sont prises en compte. À ce titre, les lobbies n’ont pas
+			à être exclus de la délibération : s’ils l’étaient, leur apport potentiel ferait défaut, la décision risquerait d’être injuste ou inappropriée
+			parce qu’elle aurait ignoré telle ou telle situation, telle ou telle facette de la réalité. Seul le respect de cette condition garantit la
+			pertinence et le caractère démocratique de la décision : ce n’est pas à son résultat, à la teneur de la décision adoptée ou au nombre de voix
+			obtenues, que l’on reconnaît l’intérêt général, mais à la démarche suivie – ce qui annonce Habermas et sa philosophie procédurale de la
+			démocratie, comme délibération ouverte entre individus raisonnables et de bonne volonté. »<br><br>
+			Hors, notre système ne favorise pas l’émergence du renouveau démocratique, mais pire encore, il évince de la représentation un nombre de plus en
+			plus élevé de voix. En effet, en ne tenant pas compte des votes blancs dans la représentation des sièges, notre système ne favorise pas
+			l’expression de toutes les volontés particulières susceptibles de contribuer à l’intérêt général.<br><br>
+			6	Et de la discrimination.<br>
+			Selon le dictionnaire Larousse , la discrimination est le fait de distinguer et de traiter différemment (le plus souvent plus mal) quelqu'un
+			ou un groupe par rapport au reste de la collectivité ou par rapport à une autre personne.<br><br>
+			La discrimination peut être lue de deux manières, « soit un traitement différencié est fait à l’encontre de deux choses identiques ou un
+			traitement identique est fait à l’encontre de deux choses différentes » .<br><br>
+			Mais où pourrait donc se manifester cette discrimination dans notre système électoral puisque chacun à une obligation de vote ? Personnellement
+			je la vois dans le traitement qui est fait du vote blanc. Les règles du système électoral le considèrent comme non-valable et n’entrant pas en
+			ligne de compte pour la distribution des sièges alors que ce vote répond à l’obligation de vote.<br><br>
+			7	Piste d’amélioration<br>
+			Bien que plusieurs autres pistes de réflexion soient envisageables, ma proposition est la suivante :<br><br>
+			Lors d’une élection communale, accorder un statut de vote valable aux votes blancs et de mettre en place une procédure de sélection de candidats
+			afin de le représenter.<br><br>
+			L’idée principale est d’offrir une représentation à une voix qui n’est pas entendue actuellement par le système électoral et permettre ainsi
+			l’expression d’un intérêt général complet.<br><br>
+			1.	Avant les élections, une « réserve » de candidats potentiels serait créée auprès de l’administration communale (sur base volontaire, en
+			réponse ou non à un appel éventuel à candidature). La liste des candidats pourrait être consultable (ou pas) auprès de l’administration communale
+			et en ligne. Si le choix d’une publication de cette liste est envisagé, chaque candidat aurait la possibilité de se présenter en quelques
+			mots. Cela permettrait à la population d’identifier ce candidat et de savoir qu’en effectuant un vote blanc, que cette personne pourrait le ou la
+			représenter.<br>
+			2.	Une case « vote blanc » serait ajoutée sur le bulletin de vote afin de formaliser ce type de vote au même titre qu’un vote traditionnel
+			(Cette case est déjà existante sur le bulletin de vote électronique).<br>
+			3.	Le vote blanc aurait un statut de vote valable car l’intention de voter blanc étant formalisée, il ne pourrait s’agir d’une erreur ou d’un
+			oubli. La volonté de l’électeur serait ainsi établie.<br>
+			4.	A l’annonce des résultats (nombre de sièges obtenus), le tirage au sort parmi la réserve de candidats, déterminerait quels candidats
+			occuperaient les sièges « blancs » ainsi obtenus par le suffrage.<br><br>
+			Le tirage au sort ne fait bien sûr pas l’unanimité, bien qu’il soit pourtant décrit comme l’outil démocratique par excellence. Cependant, le
+			tirage au sort offre la même chance à tout un chacun et réalise ce que la Constitution institue, c’est-à-dire l’égalité entre chaque citoyen
+			candidat dans une situation semblable.<br><br>
+			L’idée consiste donc de permettre à tout un chacun d’être représenté et de supprimer toute discrimination contenue dans notre système électoral
+			actuel. Permettre à chaque citoyen de faire par lui-même ce qu’il estime ne pas être fait correctement par le monde politique, selon le respect
+			des lois et de sa conception du bien commun.<br><br>
+			De cette manière, l’intérêt général, dont tous les élus ne cessent de clamer qu’il est leur objectif premier lors de décisions qu’ils prennent,
+			pourrait ainsi s’exprimer avec plus de justesse encore, car tous seraient entendus. Et imaginons que le vote blanc grappille quelques points de
+			marché au détriment des votes non-valables et des extrêmes, cela aurait pour effet d’inviter plus de partis autour d’une même table et donc,
+			favoriser l’expression d’un intérêt général qui s’en trouverait également renforcé. La réaction du monde politique pourrait être aussi celle
+			d’être plus à l’écoute du citoyen.<br><br>
+
+			7.1	Premier argument :<br>
+			Nous partons de l’hypothèse que le système électoral discrimine potentiellement le vote blanc quant à sa représentation. En effet, l’article 157
+			du Code électoral et repris dans le Code de la Démocratie Locale et de la Décentralisation  à l’article L4112-18 §3 détermine : « Un bulletin non
+			valable est un bulletin trouvé dans l’urne au moment du dépouillement, et qui ne sera pas pris en compte parce que nul ou blanc ». Et de
+			compléter : « Le bulletin blanc est celui qu’un électeur n’a pas marqué en faveur d’un candidat ou d’une liste de candidats ».<br><br>
+			Une question a été posée de l’UNIA  : « Le système électoral engendre-t-il une discrimination vis-à-vis des personnes qui votent blanc ? ». Elle
+			répond ceci : « Eu égard à nos compétences, il y a lieu de nous référer aux critères protégés tels qu’énumérés limitativement dans l’article 3
+			de la loi 10 mai 2007 tendant à lutter contre certaines formes de discrimination. Le critère qui pourrait nous occuper est celui de la conviction
+			politique. Critère qui couvrirait bien sûr également la conviction apolitique, ou qui à tout le moins ne se reconnaîtrait pas dans une des listes
+			proposées au suffrage du citoyen lors d’une élection. Ce dernier se trouverait en effet désavantagé au moment des résultats et de la composition
+			de l’assemblée et de la formation de la majorité. Sa voix bien que valablement exprimée ne s’y traduirait de quelque manière que ce soit, et sera
+			perdue. La différence de traitement qui est faite sur base de la conviction politique pourrait, si elle n’est pas justifiée, constituer une
+			discrimination entre citoyens, sur base de la Constitution belge. » <br><br>
+			Pour rappel, les articles 10 et 11 de la Constitution interdisent toute discrimination.<br><br>
+			Une seconde discrimination potentielle devrait donc être tranchée, car le système traite de la même manière deux types de vote qui ont une
+			signification différente : le vote nul et le vote blanc n’ont pas la même signification, cependant ils sont considérés tous deux de la même
+			manière, c’est-à-dire comme des votes non-valables.<br><br>
+			7.2	Second argument :<br>
+			Comme l’écrit Vincent de Coorebyter , je cite : « Il n’est possible d’atteindre l’intérêt général que si toutes les composantes du corps social
+			participent à la délibération, que si toutes les volontés particulières s’expriment et sont prises en compte. A ce titre les lobbies n’ont pas
+			à être exclus de la délibération : s’ils l’étaient, leur apport potentiel ferait défaut, la décision risquerait d’être injuste ou inappropriée
+			parce qu’elle aurait ignoré telle ou telle situation, telle ou telle facette de la réalité. Seul le respect de cette condition garantit la
+			pertinence et le caractère démocratique de la décision : ce n’est pas à son résultat, à la teneur de la décision adoptée ou au nombre de voix
+			obtenues, que l’on reconnaît l’intérêt général, mais à la démarche suivie – ce qui annonce Habermas et sa philosophie procédurale de la
+			démocratie, comme délibération ouverte entre individu raisonnables et de bonne volonté ».<br><br>
+			S’il est impératif d’écouter les lobbies, il est tout aussi impératif d’écouter les citoyens.<br><br>
+
+			7.3	Un contre-argument :<br>
+			Il nous faut garder en mémoire que selon l’article 42 de la Constitution : « Les membres des deux Chambres représentent la Nation, et non
+			uniquement ceux qui les ont élus ». Cela signifie que tout un chacun est en principe représenté par des représentants élus au suffrage, et
+			que tout citoyen, désireux d’être représenté de la manière qui lui convient, est libre de déposer une liste électorale lors des élections
+			communales. Est-ce pour autant la perception de l’ensemble de l’électorat ?<br><br>
+			7.4	Pourquoi représenter le vote blanc au niveau communal ?<br>
+			Le niveau communal est le niveau le plus proche du citoyen, c’est en principe à ce niveau que ce dernier est le plus susceptible de s’intéresser
+			à la chose publique.<br><br>
+			Selon le travail de fin d’études de Julie Delvoye , c’est aussi au niveau communal que plusieurs expériences ont été menées, notamment sur
+			l’octroi du vote aux femmes. C’est au niveau communal qu’il a d’abord été accordé ou expérimenté, avant d’être étendu aux autres niveaux de
+			pouvoir. C’est aussi au niveau communal qu’en 1969 l’âge du droit de voter a été abaissé à 18 ans avant que d’être appliqué aux autres élections
+			en 1981. <br><br>
+			7.5	De quelles autres manières le vote blanc pourrait-il être représenté ?<br>
+			Plusieurs manières pourraient être envisagées comme par exemple, représenter les votes blancs par des représentants de la société civile, néanmoins
+			comme l’écrit Vincent de Coorebyter , « les groupes, une fois intégrés aux mécanismes de décision, chercheraient petit à petit à assurer leur
+			avenir, leur continuité, leur développement, devenant ainsi à eux-mêmes leur propre fin au détriment des attentes de leur « base », reproche
+			adressé de longue date aux partis à vocation gouvernementale. »<br><br>
+			Une autre manière serait de pratiquer la représentation du vote blanc par un tirage au sort sur l’ensemble de la population votante. Proposition
+			soutenue non seulement par Julie Delvoye , mais aussi par Min Reuchamps . Personnellement, j’estime que cette proposition pose souci car si le
+			sort le désigne, cela permettrait à un citoyen ayant déjà affirmé sa conviction politique à travers son vote, d’obtenir la possibilité d’affirmer
+			sa conviction une seconde fois. Ceci représente une inégalité supplémentaire par rapport à celui qui ne bénéficie d’aucune représentation.<br><br>
+			7.6	Que disent les chiffres ?<br>
+			Avant de présenter les avantages et inconvénients de ma proposition, penchons-nous maintenant sur les résultats électoraux des élections
+			communales de 2006, 2012 et 2018. Décrivons la méthode employée pour obtenir les résultats empiriques. Ensuite, étudions la proportion des votes
+			blancs et nuls sur l’échiquier de la représentation, voyons quels seraient les impacts d’une représentation des votes blancs sur la distribution
+			des sièges et comparons-les aussi avec la distribution des sièges avec la clé D’Hondt.<br><br>
+			
+			7.6.1	Décrivons tout d’abord, la méthodologie utilisée pour obtenir ces chiffres.<br>
+			Pour chaque clé de répartition Impériali et D’Hondt, j’ai réalisé un tableur Excel, dans lequel j’ai créé une feuille par Commune. J’ai
+			retranscrit les résultats électoraux de la Commune, c’est-à-dire : Les chiffres électoraux de chaque liste ainsi que leur nom ; le nombre
+			d’inscrits ; le nombre de bulletins déposés ; le nombre de votes blancs et nuls ; le nombre de votes valables et le nombre de sièges à attribuer
+			dans cette Commune. Ensuite, j’ai réalisé trois tableaux de distribution des sièges, comme suit :<br><br>
+			•	Le premier tableau reprend la distribution normale des sièges (uniquement les votes valables)<br>
+			•	Le second en considérant les votes non-valables (blancs et nuls) et les bulletins non-déposés (absentéisme électoral) comme deux listes
+			à part entière<br>
+			•	Le troisième en agrégeant les votes non-valables et les bulletins non-déposés en une seule et même liste.<br><br>
+			J’ai appliqué à chaque tableau, une mise en forme conditionnelle de cellules, sur base du nombre de sièges à attribuer dans cette Commune. Via
+			une macro, le tableur Excel a calculé le nombre de cellules mises en évidence qui correspond au nombre de sièges obtenus. Via des fonctions, le
+			tableur Excel a calculé : si le nombre de sièges obtenus menait vers une majorité absolue ; le nombre de listes déposées, ainsi que le nombre de
+			voix obtenues par une liste majoritaire.<br><br>
+			TABLEAU A AJOUTER<br><br>
+			
+			Ces résultats ont été rassemblés dans un tableau récapitulatif alimenté par les résultats obtenus dans les 262 feuilles des Communes.<br><br>
+			TABLEAU A AJOUTER<br><br>
+			
+			Dans ce tableau récapitulatif, j’ai également comptabilisé le nombre de listes déposées ; le nombre de listes qui seules ont obtenu une majorité
+			absolue ainsi que le pourcentage de voix de l’électorat que représente cette liste majoritaire et enfin, le nombre de listes majoritaires en
+			termes de voix. Ensuite je montre l’impact de la distribution des sièges blancs et nuls et des sièges des bulletins non-déposés sur ces majorités
+			absolues.<br><br>
+			7.6.2	Où se concentre le vote non-valable ?<br>
+			Afin d’établir une corrélation entre, d’une part, le nombre de votes non-valables et l’absentéisme électoral, et, d’autre part, l’importance des
+			Communes en termes de population, j’ai scindé de manière arbitraire les 262 Communes wallonnes en 5 groupes selon le nombre de sièges à
+			attribuer .<br><br>
+			Le tableau ci-après montre le taux de votes non-valables et le taux d’absentéisme électoral, selon ces 5 groupes, lors des élections communales
+			de 2018.<br><br>
+			Dans ce tableau, le premier label représente la proportion des votes blancs et nuls.<br><br>
+			Les votes blancs et nuls n’étant pas comptabilisés distinctement, nous ne connaissons pas exactement la proportion de votes blancs par rapport
+			aux votes nuls. Selon une étude de Geoffrey Pion  de 2010 portant sur le vote blanc et nul en Wallonie, « il apparaît qu’entre la moitié et les
+			deux tiers des votes non blancs sont des bulletins barrés ou rayés », ce qui signifie qu’entre un tiers et la moitié de ces votes sont
+			blancs. L’enquête intitulée « Opening the opaque blank box », étudiant les votes blancs et nuls lors des élections communales de 2018 précise ce
+			propos : « un tiers des votes blancs et nuls seraient blancs  ».<br><br>
+			Dans le tableau, le second label représente la proportion de votes blancs estimée selon la proportion de l’enquête Opening the opaque blank
+			box.<br><br>
+			Le troisième label représente la proportion de bulletins non-déposés (l’absentéisme électoral).<br><br>
+			Le quatrième label représente la proportion de votes non-valables augmentée de l’absentéisme électoral.<br><br>
+
+			Nous pouvons constater que le vote blanc, le vote nul et l’absentéisme électoral sont plus importants dans les grandes villes. Cette tendance est
+			stable depuis au moins 2006.<br><br>
+			TABLEAU A AJOUTER<br><br>
+
+			
+			7.6.3	Combien de communes seraient impactées, en termes de distribution des sièges, si le vote blanc était représenté ?<br>
+			Dans cette section, je montre l’impact de la représentation des votes non-valables (votes blancs et nuls) et de l’absentéisme électoral,
+			c’est-à-dire que je calcule le nombre de sièges qu’ils auraient remporté s’ils avaient été considérés valables lors de la distribution des
+			sièges. Je me base sur les résultats des élections communales de 2006, 2012 et de 2018 que je compare à la clé de distribution D’Hondt, et
+			considère donc l’ensemble des 262 Communes de Wallonie.<br><br>
+			
+			En 2006, 173 Communes étaient en majorité absolue, c’est-à-dire qu’une seule liste électorale a obtenu plus de la moitié des sièges. Pour
+			l’ensemble des Communes, sur un total de 5206 sièges, 78 auraient été attribués aux votes blancs et nuls. De la sorte, 59 Communes auraient été
+			impactées par l’attribution de sièges aux votes blancs et nuls, soit 22,52% des 262 Communes. Les absentéistes auraient remporté 171 sièges
+			distribués dans 111 Communes, soit 38,17%.<br><br>
+			Après distribution de sièges aux votes blancs, nuls et bulletins non-déposés, 7 Communes auraient perdu leur majorité absolue soit 2,67% des
+			Communes. Par contre si l’on tient compte de l’ensemble des bulletins non-valables (blancs et nuls) et de l’absentéisme électoral de manière
+			agrégée, 539 sièges leur auraient été distribués, 194 Communes auraient été impactées et 13 auraient perdu leur majorité absolue.<br><br>
+			En 2012, 196 Communes étaient en majorité absolue, c’est-à-dire qu’une seule liste électorale a obtenu plus de la moitié des sièges. Pour
+			l’ensemble des Communes, sur un total de 5322 sièges, 78 auraient été attribués aux votes blancs et nuls. De la sorte, 59 Communes auraient été
+			impactées par l’attribution de sièges aux votes blancs et nuls, soit 22,52% des 262 Communes. Les absentéistes auraient remporté 400 sièges
+			distribués dans 174 Communes, soit 66,41%.<br><br>
+			Après distribution de sièges aux votes blancs, nuls et bulletins non-déposés, 25 Communes auraient perdu leur majorité absolue soit 9,54% des
+			Communes. Par contre si l’on tient compte de l’ensemble des bulletins non-valables (blancs et nuls) et de l’absentéisme électoral de manière
+			agrégée, 742 sièges leur auraient été distribués, 230 Communes auraient été impactées et 48 auraient perdu leur majorité absolue.<br><br>
+			En 2018, 189 Communes étaient en majorité absolue. Sur un total de 5370 sièges, 129 auraient été attribués aux votes blancs et nuls. 89 Communes
+			auraient été impactées par l’attribution de sièges de ce type, soit 33,97% des 262 Communes. 390 sièges auraient été distribués aux absentéistes
+			dans 176 Communes, soit 67,18%.<br><br>
+			Après distribution de sièges aux votes blancs, nuls et bulletins non-déposés, 33 Communes auraient perdu leur majorité absolue soit 12,60% des
+			Communes. Les bulletins non-valables (blancs et nuls) et de l’absentéisme électoral de manière agrégée auraient remporté 851 sièges, 239 Communes
+			auraient été impactées et 59 auraient perdu leur majorité absolue.<br><br>
+			Et si la clé de répartition des sièges Impériali avait été abandonnée au profit de la clé D’Hondt… en 2018, 158 Communes étaient en majorité
+			absolue. 254 sièges auraient été attribués aux votes blancs et nuls. 187 Communes auraient été impactées par l’attribution de sièges de ce type,
+			soit 71,37 % des 262 Communes. 494 sièges auraient été distribués aux absentéistes dans 232 Communes.<br><br>
+			Après distribution de sièges aux votes blancs, nuls et bulletins non-déposés, 47 Communes auraient perdu leur majorité absolue soit 17,94 % des
+			Communes. Les bulletins non-valables (blancs et nuls) et de l’absentéisme électoral de manière agrégée auraient remporté 866 sièges, 259 Communes
+			auraient été impactées et 59 auraient perdu leur majorité absolue.<br><br>
+			Le tableau ci-dessus, nous indique donc un impact faible dans le cas de la distribution de sièges aux votes blancs et nuls et est un peu plus
+			conséquent si l’on ajoute l’absentéisme électoral mais sans être pour autant problématique pour former des majorités. L’impact serait encore plus
+			conséquent si le Parlement de Wallonie imaginait abandonner la clé Impériali.<br><br>
+			Nous pouvons également ajouter que seules 30,53 % à 30,92 % des listes majoritaires ne représentent que des majorités absolues en termes de voix
+			de l’électorat.<br><br>
+			7.7	Quels seraient les avantages et inconvénients d’une représentation des votes blancs ?<br>
+			7.7.1	Avantages<br>
+			La représentation du vote blanc<br>
+			•	Augmente l’offre électorale et ainsi permet de redistribuer l’ensemble des voix ne participant pas actuellement à la distribution des sièges,
+			et de capturer une partie des votes actuellement en faveur des listes d’extrême droite ou gauche.<br>
+			Dans la recherche « Opening the Opaque Blank Box  », il est précisé que : « D'une part, les bulletins nuls et blancs sont plus fréquents lorsque
+			les électeurs ont du mal à trouver un parti ou un candidat qui s'aligne sur leurs opinions politiques. Par conséquent, les votes nuls et blancs
+			seront moins fréquents lorsque le nombre de partis sur le bulletin de vote augmentera, offrant ainsi un choix plus large aux électeurs
+			(Aldashev & Mastrobuoni, 2019). De même, certaines études ont montré que l'absence de partis radicaux qui capteraient les votes de protestation
+			peut conduire les électeurs mécontents à voter blanc ou à annuler leur vote (Driscoll & Nelson, 2014 ; Stiefbold, 1965) ».<br>
+			•	Permet d’exprimer un intérêt général avec plus de justesse puisqu’il y aurait un nombre plus important de sensibilités politiques exprimées
+			autour de la table durant les échanges du Conseil communal ou des autres assemblées.<br>
+			•	Force la constitution de coalitions lors de la formation de majorité d’où une expression plus conforme à l’intérêt général.<br>
+			•	Suscite chez un candidat, un engagement au sein d’un parti ou d’une liste ou permet de constituer une réserve de candidats pour les partis
+			lors des élections futures.<br>
+			•	Apporte une voix décisionnelle à une voix qui n’en possède pas aujourd’hui.<br>
+			•	Impacte faiblement le système (voir la section précédente).<br>
+			•	Améliore la prise en compte de la volonté du citoyen par les listes électorales constituées, par crainte de perdre une partie de leur
+			électorat.<br>
+			•	Permet un renouvellement des représentants des votes blancs entre deux scrutins, puisque le tirage au sort ne sélectionne que très rarement
+			deux fois la même personne.<br>
+			•	Offre l’expérience d’exercer le pouvoir à un nombre grandissant de personnes qui seront ainsi à même de la partager.<br><br>
+			7.7.2	Inconvénients :<br>
+			La représentation du vote blanc conduit à<br>
+			•	Morceler l’offre politique qui conduit à la formation de coalitions, ce qui allongerait le temps nécessaire à la formation d’une
+			majorité.<br><br>
+			7.8	Avantages et inconvénients d’une telle proposition (avis d’Experts)<br>
+			J’ai partagé ma proposition et échangé avec des experts du monde politique, que ce soient des académiques ou des personnalités politiques. Dans
+			cette section, je retranscrits les propos venant nourrir ce travail de fin de formation. L’ensemble des sujets abordés durant ces interviews ont
+			enrichis ma réflexion personnelle. Ces échanges sont présentés dans l’ordre selon lequel ils ont été réalisés.<br><br>
+			7.8.1	Rencontre avec Monsieur Benjamin Biard, docteur en Sciences Politiques et chercheur au CRISP, le 07 avril 2022.<br>
+			L’interview s’est déroulé avant de la détermination de l’objet d’étude de ce travail et visait à élargir l’horizon de ma réflexion en rapport
+			avec l’amélioration de la représentation politique publiée le 04 juin 2022 . Entre autres, j’en ressort deux éléments :<br>
+			•	Concernant le constat de rupture de confiance d’entre le citoyen et l’élu, Mr Biard mentionne qu’il est scientifiquement prouvé et ne fait
+			l’ombre d’aucun doute.<br>
+			•	Concernant la proposition même de ce travail, il précise qu’il est important qu’elle se veuille complémentaire aux mécanismes
+			existants.<br><br>
+			7.8.2	Rencontre avec Monsieur Pierre Verjans, politologue à l’Université de Liège, le 03 mai 2022.<br>
+			La proposition de ce travail est basée sur un vrai travail de réflexion. Sa difficulté majeure est d’une part que ce type de participation
+			n’intéresse pas les gens car il demeure certaines difficultés à surmonter plusieurs obstacles , semblables à ceux décrits dans le livre de
+			Daniel Gaxie intitulé « Le cens caché » . D’autre part, nous risquons de voir un délitement du vote blanc, vers un vote nul ou un absentéisme
+			électoral.<br><br>
+			7.8.3	Rencontre avec Madame Anne Pirson, première échevine responsable de la Citoyenneté au sein de la Commune de Ciney, le18 mai 2022.<br>
+			L’interview a été un peu plus générale dans un premier temps pour aboutir à la proposition de ce travail.<br>
+			A la question, « Ne faudrait-il pas représenter le vote blanc ? », elle répond :<br>
+			« Cela me semblerait compliqué, car représenter ces gens par qui ? Par des gens qui n’ont pas voté ? Ça me paraît compliqué car si les gens ne
+			votent pas, c’est parce qu’ils n’ont pas envie de voter pour quelqu’un. »<br><br>
+			7.8.4	Rencontre avec France Masay, députée ECOLO cooptée depuis 2019 et conseillère communale de la Commune de Ciney, accompagnée de Célia
+			Nennen, conseillère politique « Démocratie et Institutionnel » chez ECOLO, le 20 mai 2022.<br>
+			Concernant le postulat d’une discrimination et l’idée de poser une question préjudicielle auprès de la Cour Constitutionnelle, il n’apparait pas
+			forcément pertinent. La seule manière d'avancer sur le sujet serait d’attaquer l’Etat en responsabilité en évoquant l’article 1382 du code civil :
+			« Tout fait quelconque de l'homme, qui cause à autrui un dommage, oblige celui par la faute duquel il est arrivé à le réparer  », de décrire le
+			dommage encouru et de démontrer le lien de causalité entre les deux (chose difficile à établir).<br><br>
+			La question de comment représenter le vote blanc est rapidement venue sur la table. Et après présentation de ma proposition, d’autres questions
+			sont venues s’ajouter à la liste :<br>
+			-	Ne risque-t-il pas d’y avoir une récupération de cette façon de faire par des personnes malveillantes ?<br>
+			-	Quelle sera la position de la personne tirée au sort sur base d’une candidature volontaire par rapport aux élus ?<br>
+			-	Une autodétermination du candidat sans évaluation de sa philosophie ne risque-t-elle pas de poser problème ?<br>
+			-	Quel rôle aurait ce candidat dans le Conseil communal ?<br>
+			-	Pourquoi ne pas créer un parti et convaincre sur base d’idées ?<br>
+			-	Comment représenter une personne qui par définition se met dans une situation où on ne sait pas le définir ?<br><br>
+
+			Et autres réflexions :<br><br>
+			-	Le vote blanc n’est pas une conviction politique à représenter.<br>
+			-	La Cour constitutionnelle valide le tirage au sort en considérant que ce sort parte d’une égalité entre citoyens or ici, le tirage au sort
+			serait appliqué à un petit nombre de personnes, cela pourrait être mis en cause de manière juridique. Cela crée aussi une différence de
+			traitement entre le citoyen tiré au sort et le candidat d’une liste quant aux chances d’obtenir un siège au sein du Conseil communal.<br><br>
+			-	La proposition apporte plus de contraintes, d’objections ou de dérives possibles que d’améliorer la situation actuelle même si celle-ci n’est
+			pas satisfaisante. ECOLO a déjà mené beaucoup de réflexions sans jamais trouver de propositions où les avantages seraient supérieurs aux
+			désavantages et qui ne serait pas juridiquement attaquable, d’où une situation inconfortable car le constat au sujet du désenchantement
+			envers le monde politique est partagé par ECOLO. Ce parti travaille davantage sur d’autres pistes comme plus de transparence du système ou
+			la mise en place de Conseil citoyen adossé au Conseil communal.<br><br>
+			7.8.5	Rencontre avec Monsieur Vincent de Coorebyter, titulaire de la chaire de Philosophie sociale et politique contemporaine à l’ULB et
+			président du CRISP  ,le 09 juin 2022.<br>
+			La question que me pose Vincent de Coorebyter est la suivante : « Que voulez-vous dire par représentation du vote blanc ? ». De là, j’ai expliqué
+			que mon intention était de proposer une représentation active du vote blanc, c’est-à-dire en plaçant une personne sur ces sièges. Il s’agit donc
+			de déterminer la méthode qui semble la plus adéquate possible afin de sélectionner ce(s) représentant(e.s) du vote blanc. Selon le politologue,
+			l’utilisation du tirage au sort parmi des candidats volontaires pose un problème redoutable de représentativité car nous retrouverons
+			inévitablement les mêmes types de personnes intéressées qui n’amélioreraient pas la représentativité d’une assemblée. Le président du CRISP
+			propose de manière alternative un critère lié au revenu et de n’accepter comme candidat que celui qui ne bénéficie que d’un faible niveau de
+			revenu pour en quelque sorte contrecarrer la surreprésentation de personnes aisées, possédant un diplôme universitaire, déjà présente dans les
+			assemblées actuelles. Et de s’interroger ensuite sur le comment fonctionneraient des citoyens tirés au sort et des élus dans un Conseil communal,
+			même si cette association n’est pas rédhibitoire selon lui.<br><br>
+			Je réponds à ces propositions, qu’il ne serait pas équitable d’exiger des critères nouveaux à ce type de représentation alors qu’aucun de ces
+			critères de représentativité ne sont pas imposés lors de la composition des listes actuelles, si ce n’est la parité femme/homme et le principe
+			de la tirette.<br><br>
+			Vincent de Coorebyter me dit comprendre pourquoi je propose comme base le niveau communal, mais se demande si cela ne serait pas plus intéressant
+			de faire cette proposition aux autres niveaux de pouvoir, car c’est à ces autres niveaux de pouvoir que la représentativité de l’assemblée
+			pèche. Si l’idée est de semer des cailloux ou d’amadouer ou de dégeler le politique, c’est certainement habile, car c’est là qu’il y aura le
+			moindre risque de réaction de refus. Selon lui, pragmatiquement parlant c’est une très bonne idée que d’envisager cela au niveau communal. Mais
+			il se dit simplement que l’utilité maximale de faire cohabiter des personnes de profils vraiment différents, donc des citoyens ordinaires dans
+			un parlement, aurait potentiellement le plus d’impact, mais ce serait aussi là que ce serait le plus difficile à faire admettre. Dès lors, il
+			propose de limiter l’impact du vote blanc à hauteur de 25% des sièges de l’assemblée ce qui forcerait celle-ci à fonctionner sur base d’une
+			majorité des deux tiers des élus. Et là dit-il, on embarque presque tout le monde autour de la table des discussions, avec une interrogation
+			quant à l’efficacité du travail de cette assemblée ainsi constituée.<br><br>
+			7.9	Le questionnement de Monsieur et Madame Tout-le-monde<br>
+			7.9.1.1	La légitimité du candidat tiré au sort remise en cause<br>
+			A travers divers échanges de point de vue à ce sujet , des questions de transparence vis-à-vis des candidats potentiels quant à leurs compétences,
+			leur légitimité, leur mandat ont émergés. Aussi, je voudrais rappeler brièvement ce qu’exige la loi quant à l’éligibilité d’un citoyen.<br><br>
+			•	Que nous dit la Constitution en termes d’éligibilité :<br>
+			Art. 64 :<br>
+			Pour être éligible, il faut :<br>
+			1° être Belge;<br>
+			2° jouir des droits civils et politiques;<br>
+			3° être âgé de dix-huit ans accomplis;<br>
+			4° être domicilié en Belgique.<br>
+			Aucune autre condition d’éligibilité ne peut être requise.<br>
+			•	Que nous dit le portail de Wallonie  au sujet d’une candidature au niveau communal :<br>
+			Pour pouvoir être élu et le rester il faut :<br>
+			- être belge au plus tard au moment du dépôt de sa candidature entre les mains du président du bureau de circonscription ;<br>
+			- être âgé de 18 ans accomplis au plus tard le jour des élections ;<br>
+			- être inscrit au registre de population de la Commune de résidence principale ;<br>
+			- jouir de ses droits civils et politiques.<br><br>
+
+			Pour un candidat non-belge :<br>
+			- Un ressortissant d’un autre Etat de l’Union européenne peut se présenter aux élections communales, pour autant qu’il remplisse toutes les
+			conditions d’électorat. Il peut dès lors prétendre à un poste de conseiller communal mais pas au mandat de bourgmestre, attribué à un
+			belge.<br><br>
+			Ceci signifie, selon moi, que quiconque exigerait d’un élu de faire preuve de compétences particulières pour être éligible, émet une idée
+			contraire à la Constitution et à la loi. Mais rien n’empêche de proposer à ce candidat une fois élu de suivre une formation quant aux compétences
+			à développer pour mener à bien son mandat d’élu.<br><br>
+			Quant à un programme électoral, d’expérience, rien n’est spécifié dans la loi quant à l’obligation d’en déposer un lors du dépôt de la
+			candidature.<br><br>
+			7.9.1.2	Et pourquoi pas une formation des élus à postériori ?
+			L’Union des Villes et Communes de Wallonie propose tout un panel de formations à ce sujet, notamment dix kits numériques  accessibles en ligne :
+			Le fonctionnement de la commune ; Les finances communales ; Le personnel communal ; La transition énergétique ; Les marchés publics ;
+			Le développement durable ; L'insertion en CPAS ; Le fonctionnement des CPAS ; La précarité énergétique et hydrique ; Les CPAS et le grand
+			âge.<br><br>
+			Après un contact téléphonique avec Monsieur Pierre Bassleer, chargé de cours à l’UVCW, il appert que l’ensemble des nouveaux élus sont invités à
+			suivre une séance d’information relative à la gestion communale. Celle-ci est sans obligation de participation.<br><br>
+			Sur les 5364 élus invités à suivre cette séance suite aux élections communales de 2018, seulement 839 personnes, soit 15,64 % d’entre eux y ont participé.
+			Voici un bref aperçu du programme de la séance ci-dessous :<br><br>
+			TABLEAU A AJOUTER<br><br>
+			
+			8	Comment s’y prendre pour concrétiser cette proposition ?<br>
+			La première action à mener serait de poser une question préjudicielle auprès de la Cour Constitutionnelle pour savoir si le fait de ne pas
+			considérer les votes blancs et nuls dans la distribution des sièges constitue une discrimination selon le critère protégé de la conviction
+			politique/apolitique. (Voir interview point 7.8.4) <br><br>
+			La deuxième action serait de sensibiliser le monde politique dans son ensemble à propos de cette problématique de représentation incomplète de
+			la population du fait de l’article 157 du code électoral. Pour rappel, cet article dit : « Sont nuls, les bulletins qui ne contiennent
+			l’expression d’aucun suffrage ». Cette action est déjà en cours.<br><br>
+			La troisième action consisterait à mener une pétition devant le Parlement de Wallonie pour activer la mise en place d’une commission délibérative
+			qui mènerait un travail de réflexion à ce sujet et proposerait des recommandations au Parlement de Wallonie afin d’offrir une représentation pour
+			tout un chacun.
+			Après contact avec le Parlement de Wallonie, la réponse suivante m’a été adressée par Monsieur Frédéric Janssens, greffier le 11/06/2022 : « Je vous confirme que l’article 130bis du Règlement est formellement entré en vigueur mais que le mécanisme des commissions délibératives reste tributaire d’une autorisation de Mme la Ministre de l’Intérieur qui nous est annoncée pour les prochains jours. »
+			Il nous faudra donc attendre cette autorisation avant que d’entamer cette démarche.<br><br>
+
+			9	Conclusion provisoire.<br>
+			Si d’aucuns estiment que la démocratie n’est pas en crise mais en pleine transition, d’autres vous diront qu’elle est en évolution constante
+			depuis son avènement.<br><br>
+			Nous pourrions considérer que « Tous les membres d’une assemblée représentative sont dans l’obligation de représenter l’ensemble de l’électorat
+			et non seulement ceux qui les ont élus », et en rester là. Cependant, nous ne sommes pas certains qu’il en soit vraiment ainsi. Notre système
+			électoral ne tient pas compte d’un certain nombre de voix lors de la distribution des sièges et de là, ne permet pas actuellement une
+			représentation pour tous.<br><br>
+			La proposition nous invite à nous pencher sur la représentation incomplète au cœur de notre système électoral. Alors que pour être correctement
+			exprimé, l’intérêt général réclame un système inclusif qui place tout le monde ou ses représentants autour de la table des discussions, nous
+			subissons de plein fouet, les règles d’un système basé sur la compétition qui exclut un nombre croissant de voix.<br><br>
+			Ce travail propose une réponse à cette représentation inachevée de l’ensemble de l’électorat, en imaginant un processus de représentation du vote
+			blanc. Beaucoup de questions ont été soulevées durant divers échanges avec le monde académique, politique, mais aussi des citoyens, et il est
+			important d’y apporter des réponses, sans se tromper d’objectif. Il s’agit bien ici d’offrir une représentation pour tout un chacun et non
+			d’améliorer la représentativité d’un Conseil communal ou d’une assemblée.<br><br>
+			Comme nous l’avons lu dans les graphiques, c’est dans les grandes villes que les votes blancs et nuls mais également l’absentéisme électoral
+			s’expriment de manière plus importante. Nous avons lu également que l’impact de la proposition est faible, si l’on s’engage à ne représenter que
+			le vote blanc. Il est un peu plus conséquent, mais sans être pour autant problématique pour la formation de majorité, si l’on ajoute les autres
+			voix qui n’entre pas en ligne de compte pour la distribution des sièges (l’absentéisme électoral). En effet, lors des élections communales
+			wallonnes de 2018, sur 5370 sièges à attribuer aux élus, 129 sièges, soit 2,40% auraient été distribués aux votes blancs et nuls, et 851 sièges,
+			soit 15,85% dans le cas d’une distribution des sièges à l’ensemble des voix évincées par le système. Les majorités absolues dans l’ensemble des
+			Communes seraient passées de 189 (72,14%) à 156 (59,54%) en cas de distribution aux votes blancs et nuls, et à 141 (53,82%) dans le second
+			cas.<br><br>
+			Ce travail sera à la base d’une pétition à déposer devant le Parlement de Wallonie afin qu’une Commission délibérative soit mise en place avant
+			la fin de cette mandature 2019-2024 pour répondre à cette crise de la représentation.<br><br>
+			La proposition génère des questions pertinentes qui méritent d’être débattues par des élus et des citoyens réunis dans une seule et même
+			enceinte. Faisons dès lors confiance à l’intelligence collective.<br><br>
+			
+			Bibliographie<br><br>
+			Cette bibliographie reprend l’inventaire des ouvrages et revues à portée politique qui m’ont attiré ou qui m’ont été suggérés de lire tout au
+			long de mon parcours de réflexion et non seulement pour la rédaction de ce travail.<br><br>
+			•	Clarenne, J., & Jadot, C. (2021). Les outils délibératifs auprès des parlements sous l’angle du droit constitutionnel belge. Courrier
+			hebdomadaire du CRISP, 25172518(32), 5-60.<br>
+			•	de Coorebyter, V. (2002). La citoyenneté. Dossiers du CRISP, 56(1), 9-144.<br>
+			•	de Coorebyter, V. (2018). Les lobbies et l’intérêt général. Les analyses du CRISP en ligne,
+			https://www.crisp.be/2018/01/lobbies-et-interet-general/<br>
+			•	de Coorebyter, V. (2020). Dis, c'est quoi la démocratie ?<br>
+			•	Delvoye, J. (2019), Travail de fin d’études Master en droit à finalité en Droit Social Année académique 2018-2019, Les votes blancs et
+			nuls : une opportunité pour la réintroduction du tirage au sort, 10.<br>
+			•	De Rynck, F., & Steyaert, S. (2019). De participatieve omslag: onze democratie in transitie.<br>
+			•	Deneault, A. (2015). La médiocratie. Lux éditeur.<br>
+			•	Deschouwer, K., Delwit, P., Hooghe, M., Baudewyns, P., & Walgrave, S. (2015). Décrypter l'électeur. Le comportement électoral et les
+			motivations de vote.<br>
+			•	Faniel, J., & Tréfois, A. (2011). Les analyses du CRISP en ligne 8 décembre 2011,
+			https://www.crisp.be/crisp/wp-content/uploads/analyses/2011-12-08_cle_D-Hondt.pdf.<br>
+			•	Gaudin, T. (2020). La régulation juridique des partis politiques. Courrier hebdomadaire du CRISP, 24832484(38), 5-68.<br>
+			•	Gaxie, D., & Le Seuil, E. (1987). Le cens caché. Réseaux. Communication-Technologie-Société, 5(22), 29-51.<br>
+			•	Lewis, E., & Slitine, R. (2016). Le coup d'État citoyen : ces initiatives qui réinventent la démocratie. La découverte.<br>
+			•	Manin, B. (2012). Principes du gouvernement représentatif. Calmann-Lévy.<br>
+			•	Pion, G. (2010). Le vote blanc et nul en Wallonie: analyse écologique et individuelle. Belgeo. Revue belge de géographie, (3), 249-264,
+			https://journals.openedition.org/belgeo/pdf/6441.<br>
+			•	Pilet, J. B., Jimena Sanhuza, M., Talukder, D., Dodeigne, J., & Brennan, A. E. (2019). Opening the Opaque Black Box.
+			Politics Low Countries, 1, 182.<br>
+			•	Pitseys, J. (2017). Démocratie et citoyenneté. Dossiers du CRISP, (1), 9-113.<br>
+			•	Reuchamps, M. (2020). Pour un renouvellement de notre démocratie: quelques inspirations belges.<br>
+			•	Rosanvallon, P. (2014). Le Parlement des invisibles., Editions du Seuil, Raconter la vie<br>
+			•	Rousseau, D. (2015). Radicaliser la démocratie. Propositions pour une refondation. Média Diffusion.<br>
+			•	Sägesser, C. (2016). Législatif, exécutif et judiciaire. Les relations entre les trois pouvoirs. Dossiers du CRISP, (2), 9-71.<br>
+			•	Testart, J. (2015). L'Humanitude au pouvoir. Comment les citoyens peuvent décider du bien commun. Média Diffusion.<br>
+			•	Van Reybrouck, D. (2014). Contre les élections. Éditions Actes Sud.<br>
+			•	Verleden, F. (2019). Aux sources de la particratie. Les relations entre les partis politiques belges et leurs parlementaires (1918-1970)
+			(pp. 1-384). CRISP; Brussel.<br>
+			•	Vrydagh, J., Bottin, J., Reuchamps, M., Bouhon, F., & Devillers, S. (2021). Les commissions délibératives entre parlementaires et
+			citoyens tirés au sort au sein des assemblées bruxelloises. Courrier hebdomadaire du CRISP, 2492(7), 5-68.<br><br>
+			Citation :<br><br>
+			•	Francis, D. D. (2013). Démocratie: Histoire politique d’un mot aux États-Unis et en France. Montréal, QC, Lux.<br>
+			•	Groupe de travail sur l’avenir des institutions de l’Assemblée nationale (2015). - 
+			Refaire la démocratie.
+			https://www2.assemblee-nationale.fr/static/14/institutions/Rapport_groupe_travail_avenir_institutions_T1.pdf<br><br>
+			Sites Internet visités le 25 juin 2022 :<br><br>
+			•	Résultats chiffrés des élections communales en Région wallonne de 2012 - http://electionslocales.wallonie.be/2012/fr/index.html<br>
+			•	Résultats chiffrés des élections communales en Région wallonne de 2018 -
+			https://elections2018.wallonie.be/fr/resultats-chiffres?el=CG&id=CGM92094<br>
+			•	Résultats chiffrés des élections communales en Communauté germanophone de 2018
+			- http://wahlergebnisse.gemeindewahlen.be/de/wahlen3916.html?el=CG&fbclid=IwAR3rmvsc_zJCS3_tOysYz5LKtXpyIfg6ARMm5pES0woQ-e5p2mI4ZQ7o6L8<br>
+			•	Le Centre de Recherche et d’Information Socio-Politique – https://www.vocabulairepolitique.be/.<br>
+			•	Texte de la Constitution belge, http://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=fr&table_name=loi&la=F&cn=1994021730<br>
+			•	Déclaration universelle des droits de l’homme (1948),
+			https://www.un.org/fr/universal-declaration-human-rights/<br>
+			•	Le Sénat de Belgique. Histoire et patrimoines : Le suffrage universel,
+			https://www.senate.be/home/sections/geschiedenis_en_erfgoed/AES-SU/art-1-0_fr.html et suivantes.<br>
+			•	Wikipédia, Droit de vote en Belgique, https://fr.wikipedia.org/wiki/Droit_de_vote_en_Belgique<br>
+			•	Belgium.be, Informations et services officiels, Elections, https://www.belgium.be/fr/la_belgique/pouvoirs_publics/democratie/elections.<br>
+			•	Portail des élections – Elections locales - 
+			http://electionslocales.wallonie.be/<br>
+			•	Wallex – Code de la démocratie locale et de la décentralisation - 
+			https://wallex.wallonie.be/eli/loi-decret/2004/04/22/200427184/2014/04/27<br>
+			•	Code Civil : Des délits et des quasi-délits - 
+			http://www.ejustice.just.fgov.be/cgi_loi/loi_a1.pl?DETAIL=1804032133%2FF&caller=list&row_id=1&numero=10&rech=14&cn=1804032133&table_name=LOI&nm=1804032153&la=F&dt=CODE+CIVIL&language=fr&fr=f&choix1=ET&choix2=ET&fromtab=loi_all&trier=promulgation&chercher=t&sql=dt+contains++%27CODE%27%26+%27CIVIL%27and+actif+%3D+%27Y%27&tri=dd+AS+RANK+&imgcn.x=74&imgcn.y=6#LNK0060<br>
+			•	Union des Villes et Communes de Wallonie – 
+			https://www.uvcw.be/formations/<br><br>
+			Ce travail traite d’une proposition visant à offrir une représentation à tout un chacun à l’issue d’un scrutin communal.<br><br>
+
+			À travers la compilation des résultats des élections communales en Région wallonne de 2006, 2012 et 2018, nous pouvons découvrir les impacts
+			d’une telle proposition sur les majorités communales.<br><br>
+
+			Par le biais de différentes interviews, nous prendrons connaissance des griefs, mais aussi des points positifs de cette proposition.
+			Le corps de ce document contient 59.526 signes.
+			</p>
+		</body>
+	</div>		
+</html>

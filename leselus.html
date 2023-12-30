@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<div id="bloc_page">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+			<meta name="description" content="Système électoral - Vote blanc - Election - Discrimination - Représentation">
+			<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+			<link rel="stylesheet" href="style.css" />
+			<title>Notre système électoral, qu'en penser ?</title>
+		</head>
+		<header class="header">
+			<img id="logo" src="images/LogoSmallCLE.png" alt="Son logo"/>
+		
+			<input type="checkbox" id="check">
+			<label for="check" class="icons">
+			  <i class='bx bx-menu' id="menu-icon"></i>
+			  <i class='bx bx-x' id="close-icon"></i>
+			</label>
+			 
+			<nav class="navbar">  
+				<a href="index.html">Accueil</a>
+				<a href="constat.html">Constat</a>
+				<a href="obligationvote.html">Obligation de vote</a>
+				<a href="attribution.html">Attribution des sièges</a><br>
+				<a href="laloi.html">Que dit la loi ?</a>
+				<a href="propositions.html">Propositions</a>
+				<a href="experts.html">Qu'en disent les experts ?</a><br>
+				<a href="conclusion.html">Conclusion provisoire</a>
+				<a href="initiatives.html">Initiatives citoyennes</a>
+				<a href="info.html">Documentation</a>
+			</nav>
+		  </header>
+		<body>
+            <h1>Les 14.212 élus de Belgique</h1>
+            <h2>Les 60 sénateurs</h2>
+            <p>
+                Le sénat : <strong>60</strong> - <a href="https://www.senate.be/www/?MIval=/index_senate&MENUID=14120&LANG=fr" target="blank">Le sénat</a>
+            </p>
+            <h2>Les 150 parlementaires fédéraux</h2>
+            <p>
+                La chambre des représentants : <strong>150</strong> - <a href="https://www.lachambre.be/kvvcr/showpage.cfm?section=/depute&language=fr&cfm=/site/wwwcfm/depute/cvlist54.cfm" target="blank">La chambre des représentants</a>
+			</p>
+            
+            <h2>Les 194 parlementaires wallons</h2>
+            <p>
+                Région wallonne : <strong>75</strong> - <a href="https://www.parlement-wallonie.be/pwpages?p=composition_dep" target="blank">Parlement de Wallonie</a><br>
+                Communauté française Wallonie-Bruxelles : <strong>94</strong> - <a href="https://www.pfwb.be/les-94-deputes" target="blank">Parlement Communauté Wallonie-Bruxelles</a><br>
+                Communauté germanophone : <strong>25</strong> - <a href="https://pdg.be/fr/desktopdefault.aspx/tabid-4065" target="blank">Parlement Communauté germanophone</a><br>
+            </p>
+			<h2>Les 89 parlementaires bruxellois</h2>
+            <p>
+                Région Bruxelles-Capitale : <strong>89</strong> - <a href="http://www.parlement.brussels/deputes/" target="blank">Parlement bruxellois</a>
+            </p>
+			<h2>Les 124 parlementaires flamands</h2>
+            <p>
+                Région et Communauté flamandes : <strong>124</strong> - <a href="https://www.vlaamsparlement.be/nl/vlaamse-volksvertegenwoordigers-in-het-Vlaams-Parlement" target="blank">Parlement flamnand</a>
+            </p>
+            
+            <h2>Les 223 conseillers provinciaux wallons</h2>
+            <p>
+                Province de Namur : <strong>37</strong> - <a href ="https://www.province.namur.be/les_conseillers" target="blank">Conseil provincial Namur</a><br>
+                Province de Liège : <strong>56</strong> - <a href="https://www.provincedeliege.be/conseil/conseillers" target="blank">Conseil provincial Liège</a><br>
+                Province de Luxembourg : <strong>37</strong> - <a href="https://www.province.luxembourg.be/province-de-luxembourg/conseil-provincial/la-liste-elus" target="blank">Conseil provincial Luxembourg</a><br>
+                Province du Brabant wallon : <strong>37</strong> - <a href="https://www.brabantwallon.be/bw/un-college-a-votre-ecoute/" target="blank">conseil provincial Brabant wallon</a><br>
+                Province du Hainaut : <strong>56</strong> - <a href="https://portail.hainaut.be/laprovince/hemicycle" target="blank">Conseil provincial Hainaut</a><br>
+			</p>
+			<h2>Les 175 conseillers provinciaux flamands</h2>
+            <p>
+                Province de Flandre Orientale : <strong>36</strong> - <a href="https://oost-vlaanderen.be/bestuur-en-regio/het-provinciebestuur/provincieraad/samenstelling-provincieraad.html" target="blank">Conseil provincial Flandre Orientale</a><br>
+                Province de Flandre occidentale : <strong>36</strong> - <a href="https://www.west-vlaanderen.be/over-west-vlaanderen/bestuur-en-beleid/provincieraad/samenstelling" target="blank">Conseil provincial Flandre occidentale</a><br>
+                Province de Anvers : <strong>36</strong> - <a href="https://www.provincieantwerpen.be/provinciebestuur/politiek-bestuur/provincieraad/samenstelling-en-leden.html" target="blank">Conseil provincial Anvers</a><br>
+                Province du Limbourg : <strong>31</strong> - <a href="https://www.limburg.be/provincieraadsamenstelling" target="blank">Conseil provincial Limburg</a><br>
+                Province du Brabant flamand : <strong>36</strong> - <a href="https://www.vlaamsbrabant.be/nl/over-de-provincie/bestuur-en-beleid/provincieraad/samenstelling/provincieraadsleden" target="blank">Conseil provincial Brabant flamand</a><br>
+            </p>
+			<p>
+				Le nombre de conseillers provinciaux varie en fonction de la population de la province. Il est en outre différent en Région
+				wallonne et en Région flamande : dans les provinces de moins d'un million d'habitants, le nombre de conseillers provinciaux
+				est de 37 en Wallonie et de 31 en Flandre ; dans celles d'un million d'habitants et plus, les conseillers provinciaux sont au
+				nombre de 56 en Wallonie et de 36 en Flandre. Lors des élections provinciales de 2018, 398 conseillers provinciaux ont été
+				élus (223 en Wallonie et 175 en Flandre). Il n'y a pas de conseil provincial en Région bruxelloise, celle-ci n'appartenant
+				à aucune province. (Source : <a href ="https://www.vocabulairepolitique.be/conseil-provincial/" target="blank">Le CRISP</a>)
+				</p>
+            <h2>Les 5.329 conseillers communaux wallons</h2>
+            <ul id="menu-deroulant">
+				<li >A
+					<ul class="SousMenu">
+						<li ><a href ="https://www.aiseau-presles.be/ma-commune/vie-politique/conseil-communal" target="blank">Aiseau-Presles - 21</a></li>
+						<li ><a href ="https://www.amay.be/ma-commune/vie-politique/le-conseil-communal" target="blank">Amay - 23</a></li>
+						<li ><a href ="https://www.amel.be/die-gemeinde/politik/gemeinderat/#topmenu" target="blank">Amblève - 17</a></li>
+						<li ><a href ="https://www.andenne.be/vie-communale/politique/conseil-communal/" target="blank">Andenne - 29</a></li>
+						<li ><a href ="https://www.anderlues.be/ma-commune/vie-politique/conseil-communal" target="blank">Anderlues - 23</a></li>
+						<li ><a href ="https://www.anhee.be/ma-commune/vie-politique/conseil-communal" target="blank">Anhée - 19</a></li>
+						<li ><a href ="http://www.ans-commune.be/ma-commune/vie-politique/conseil-communal/membres" target="blank">Ans - 29</a></li>
+						<li ><a href ="https://anthisnes.be/conseil-communal/" target="blank">Anthisnes - 15</a></li>
+						<li ><a href ="https://www.antoing.net/ma-commune/vie-politique/conseil-communal" target="blank">Antoing - 19</a></li>
+						<li ><a href ="https://www.arlon.be/ma-commune/vie-politique/conseil-communal" target="blank">Arlon - 29</a></li>
+						<li ><a href ="https://www.assesse.be/fr/ma-commune/vie-politique/conseil-communal" target="blank">Assesse - 17</a></li>
+						<li ><a href ="https://www.ath.be/ma-commune/vie-politique/conseil-communal" target="blank">Ath - 29</a></li>
+						<li ><a href ="http://www.attert.be/commune/vie-politique/conseil-communal" target="blank">Attert - 17</a></li>
+						<li ><a href ="https://www.aubange.be/joomla3/index.php/politique/conseil-communal" target="blank">Aubange - 25</a></li>
+						<li ><a href ="https://www.aubel.be/fr/ma-commune/vie-politique/conseil-communal" target="blank">Aubel - 15</a></li>
+						<li ><a href ="http://www.awans.be/commune/vie-politique/conseil-communal" target="blank">Awans - 21</a></li>
+						<li ><a href ="https://www.aywaille.be/fr/ma-commune/vie-politique/conseil-communal" target="blank">Aywaille - 23</a></li>
+						/*371*/
+					</ul>
+				</li>
+				<li>B
+					<ul class="SousMenu">
+						<li ><a href ="https://www.baelen.be/commune/vie-politique/conseil-communal" target="blank">Baelen - 15</a></li>
+						<li ><a href ="https://www.bassenge.be/bassenge/contenu/politique/le-conseil" target="blank">Bassenge - 19</a></li>
+						<li ><a href ="https://www.bastogne.be/ma-commune/vie-politique/conseil-communal" target="blank">Bastogne - 25</a></li>
+						<li ><a href ="http://www.beaumont.be/Le-conseil-communal-1074" target="blank">Beaumont - 19</a></li>
+						<li ><a href ="https://www.beauraing.be/ma-commune/vie-politique/college-communal" target="blank">Beauraing - 21</a></li>
+						<li ><a href ="https://www.beauvechain.eu/ma-commune/vie-politique/conseil-communal/composition-1" target="blank">Beauvechain - 19</a></li>
+						<li ><a href ="https://www.beloeil.be/ma-commune/vie-politique/conseil-communal.html" target="blank">Belœil - 23</a></li>
+						<li ><a href ="https://www.berloz.be/commune/vie-politique/conseil-communal" target="blank">Berloz - 13</a></li>
+						<li ><a href ="https://www.bernissart.be/index.php/vie-politique/le-conseil-communal" target="blank">Bernissart - 21</a></li>
+						<li ><a href ="https://www.bertogne.be/vie-politique/conseil-communal/composition-du-conseil-communal" target="blank">Bertogne - 13</a></li>
+						<li ><a href ="https://www.bertrix.be/fr/ma-commune/vie-politique/conseil-communal" target="blank">Bertrix - 19</a></li>
+						<li ><a href ="https://www.beyne-heusay.be/conseil-communal" target="blank">Beyne-Heusay - 23</a></li>
+						<li ><a href ="https://www.bievre.be/bievre/contenu/vie-politique/vie-politique-1/conseil-communal" target="blank">Bièvre - 13</a></li>
+						<li ><a href ="https://www.binche.be/fr/ma-ville/vie-politique/conseil-communal" target="blank">Binche - 31</a></li>
+						<li ><a href ="https://www.blegny.be/ma-commune/vie-politique/conseil-communal" target="blank">Blegny - 23</a></li>
+						<li ><a href ="https://www.bouillon.be/ma-commune/vie-politique/conseil-communal" target="blank">Bouillon - 17</a></li>
+						<li ><a href ="https://www.boussu.be/ma-commune/vie-politique/conseil-communal" target="blank">Boussu - 25</a></li>
+						<li ><a href ="https://www.braine-lalleud.be/ma-commune/vie-politique/conseil-communal" target="blank">Braine-l'Alleud  - 33</a></li>
+						<li ><a href ="https://www.braine-le-chateau.be/ma-commune/vie-politique/conseil-communal" target="blank">Braine-le-Château - 21</a></li>
+						<li ><a href ="https://www.braine-le-comte.be/administration/vie-politique/conseil-communal-1/les-conseillers-communaux-1" target="blank">Braine-le-Comte - 27</a></li>
+						<li ><a href ="https://www.braives.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Braives - 17</a></li>
+						<li ><a href ="https://www.brugelette.be/ma-commune/vie-politique/conseil-communal/conseillers-communaux" target="blank">Brugelette - 13</a></li>
+						<li ><a href ="https://www.brunehaut.be/234-commune-brunehaut-le-conseil-communal.html" target="blank">Brunehaut - 19</a></li>
+						<li ><a href ="https://buellingen.be/politik/gemeinderat/" target="blank">Bullingen - 17</a></li>
+						<li ><a href ="https://www.burdinne.be/ma-commune/vie-politique/conseil-communal/compisition" target="blank">Burdinne - 13</a></li>
+						<li ><a href ="documents/comparatif_clefs/BurgReuland.pdf" target="blank">Burg-Reuland - 13</a></li>
+						<li ><a href ="https://butgenbach.be/politik-menschen/der-gemeinderat/" target="blank">Butgenbach - 17</a></li>
+						/*529*/
+					</ul>
+				</li>
+				<li>C
+					<ul class="SousMenu">
+						<li ><a href ="https://www.celles.be/ma-commune/vie-politique/conseil-communal">Celles - 13</a></li>
+						<li ><a href ="http://www.cerfontaine.be/ma-commune/politique/le-conseil-communal" target="blank">Cerfontaine - 15</a></li>
+						<li ><a href ="https://chapelle-lez-herlaimont.be/commune/politique/conseil" target="blank">Chapelle-lez-Herlaimont - 23</a></li>
+						<li ><a href ="https://www.charleroi.be/vie-communale/conseil-communal" target="blank">Charleroi - 51</a></li>
+						<li ><a href ="https://www.chastre.be/ma-commune/vie-politique/conseil-communal" target="blank">Chastre - 19</a></li>
+						<li ><a href ="https://www.chatelet.be/ma-commune/vie-politique/conseil-communal" target="blank">Châtelet - 33</a></li>
+						<li ><a href ="https://www.chaudfontaine.be/ma-commune/vie-politique-participation/le-bourgmestre-les-elu%c2%b7e%c2%b7s/conseil-communal/composition-du-conseil-communal/" target="blank">Chaudfontaine - 27</a></li>
+						<li ><a href ="https://www.chaumont-gistoux.be/ma-commune/vie-politique/conseil-communal" target="blank">Chaumont-Gistoux - 21</a></li>
+						<li ><a href ="https://www.chievres.be/ma-commune/vie-politique/conseil-communal" target="blank">Chièvres - 17</a></li>
+						<li ><a href ="https://www.chimayville.be/ma-ville/vie-politique/conseil-communal" target="blank">Chimay - 21</a></li>
+						<li ><a href ="https://www.chiny.be/administration/les-elus/conseil-communal" target="blank">Chiny - 17</a></li>
+						<li ><a href ="https://www.ciney.be/vie-communale/vie-politique/conseil-communal/composition" target="blank">Ciney - 25</a></li>
+						<li ><a href ="https://www.clavier.be/ma-commune/vie-politique/conseil-communal/conseil-communal" target="blank">Clavier - 15</a></li>
+						<li ><a href ="https://www.colfontaine.be/ma-commune/vie-politique/conseil-communal-composition-2018-2024" target="blank">Colfontaine - 27</a></li>
+						<li ><a href ="http://www.comblainaupont.be/ma-commune/vie-politique/conseil-communal/Composition" target="blank">Comblain-au-Pont - 17</a></li>
+						<li ><a href ="https://www.villedecomines-warneton.be/ma-commune/politique/conseillers-communaux" target="blank">Comines-Warneton - 25</a></li>
+						<li ><a href ="https://www.courcelles.eu/commune/vie-politique/conseil-communal" target="blank">Courcelles - 31</a></li>
+						<li ><a href ="http://www.court-st-etienne.be/la-commune/vie-politique/le%20conseil%20communal" target="blank">Court-Saint-Étienne - 21</a></li>
+						<li ><a href ="https://www.couvin.be/ma-commune/vie-politique/conseil-communal" target="blank">Couvin - 23</a></li>
+						<li ><a href ="https://www.crisnee.be/politique/conseil-communal" target="blank">Crisnée - 13</a></li>
+						/*454*/
+					</ul>
+				</li>
+				<li>D
+					<ul class="SousMenu" >
+						<li ><a href ="https://www.dalhem.be/ma-commune/vie-politique/conseil-communal" target="blank">Dalhem - 19</a></li>
+						<li ><a href ="https://www.daverdisse.be/ma-commune/vie-politique/conseil-communal/membres-du-conseil-communal/ses-membres" target="blank">Daverdisse - 9</a></li>
+						<li ><a href ="http://www.dinant.be/politique/conseil-communal" target="blank">Dinant - 23</a></li>
+						<li ><a href ="https://www.dison.be/commune/vie-politique/conseil-communal" target="blank">Dison - 25</a></li>
+						<li ><a href ="https://www.doische.be/ma-commune/vie-politique/conseil-communal" target="blank">Doische - 11</a></li>
+						<li ><a href ="http://www.donceel.be/" target="blank">Donceel - 13</a></li>
+						<li ><a href ="https://www.communedour.be/ma-commune/vie-politique/conseil-communal" target="blank">Dour - 25</a></li>
+						<li ><a href ="https://www.durbuy.be/vivre-a-durbuy/conseil-communal/" target="blank">Durbuy - 21</a></li>
+						/*146*/
+					</ul>
+				</li>
+				<li>E
+					<ul class="SousMenu">
+						<li ><a href ="https://www.ecaussinnes.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Écaussinnes - 21</a></li>
+						<li ><a href ="https://www.eghezee.be/votre-commune/vie-politique/conseil-communal" target="blank">Éghezée - 25</a></li>
+						<li ><a href ="https://www.ellezelles.be/fr/ma-commune/vie-politique/le-conseil-communal" target="blank">Ellezelles - 17</a></li>
+						<li ><a href ="https://www.enghien-edingen.be/fr/ma-ville/vie-politique/le-conseil-communal" target="blank">Enghien - 23</a></li>
+						<li ><a href ="https://www.engis.be/ma-commune/vie-politique/conseil-communal" target="blank">Engis - 17</a></li>
+						<li ><a href ="https://www.erezee.be/ma-commune/vie-politique/conseil-communal" target="blank">Érezée - 13</a></li>
+						<li ><a href ="https://www.erquelinnes.be/ma-commune/vie-politique/conseil-communal" target="blank">Erquelinnes - 21</a></li>
+						<li ><a href ="https://www.esneux.be/vie-politique/conseil-communal.html?lg=FR" target="blank">Esneux - 23</a></li>
+						<li ><a href ="https://www.estaimpuis.be/vie-politique-2/conseil-communal/" target="blank">Estaimpuis - 21</a></li>
+						<li ><a href ="https://www.estinnes.be/ma-commune/vie-politique/conseil-communal" target="blank">Estinnes - 19</a></li>
+						<li ><a href ="http://www.etalle.be/conseil-communal.html" target="blank">Étalle - 17</a></li>
+						<li ><a href ="https://www.eupen.be/politik-verwaltung/politik/stadtrat/fraktionen-und-mitglieder/" target="blank">Eupen - 25</a></li>
+						/*242*/
+					</ul>
+				</li>
+				<li>F
+					<ul class="SousMenu">
+						<li ><a href ="https://www.faimes.be/ma-commune/vie-politique/conseil-communal-1" target="blank">Faimes - 13</a></li>
+						<li ><a href ="https://www.farciennes.be/ma-commune/vie-politique/le-conseil-communal" target="blank">Farciennes - 21</a></li>
+						<li ><a href ="https://www.fauvillers.be/ma-commune/vie-politique/conseil-communal/" target="blank">Fauvillers - 11</a></li>
+						<li ><a href ="https://www.fernelmont.be/ma-commune/vie-politique/le-conseil-communal" target="blank">Fernelmont - 19</a></li>
+						<li ><a href ="https://www.ferrieres.be/commune/vie-politique/conseil-communal-1/conseil-communal" target="blank">Ferrières - 15</a></li>
+						<li ><a href ="https://www.fexhe-le-haut-clocher.be/ma-commune/vie-politique/conseil-communal/composition-1" target="blank">Fexhe-le-Haut-Clocher - 13</a></li>
+						<li ><a href ="https://www.flemalle.be/ma-commune/vie-politique/conseil-communal" target="blank">Flémalle - 29</a></li>
+						<li ><a href ="https://www.fleron.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Fléron - 25</a></li>
+						<li ><a href ="https://www.fleurus.be/siteFleurus2014/?ccons" target="blank">Fleurus - 27</a></li>
+						<li ><a href ="https://www.flobecq.be/section/833/membres-du-conseil" target="blank">Flobecq - 13</a></li>
+						<li ><a href ="https://www.floreffe.be/ma-commune/vie-politique/#conseil-communal" target="blank">Floreffe - 19</a></li>
+						<li ><a href ="https://www.florennes.be/ma-commune/vie-politique/conseil-communal" target="blank">Florennes - 21</a></li>
+						<li ><a href ="https://www.florenville.be/ma-ville/vie-politique/conseil-communal-1" target="blank">Florenville - 17</a></li>
+						<li ><a href ="https://www.villedefontaine.be/ma-ville/vie-politique/conseil-communal/composition" target="blank">Fontaine-l'Évêque - 25</a></li>
+						<li ><a href ="https://www.fosses-la-ville.be/ma-commune/vie-politique/conseil-communal" target="blank">Fosses-la-Ville - 21</a></li>
+						<li ><a href ="https://www.frameries.be/ma-commune/vie-politique/conseil-communal/voselus20182024" target="blank">Frameries - 27</a></li>
+						<li ><a href ="https://www.frasnes-lez-anvaing.be/ma-commune/vie-politique/conseil-communal" target="blank">Frasnes-lez-Anvaing - 21</a></li>
+						<li ><a href ="https://www.froidchapelle.be/ma-commune/vie-politique/conseil-communal/membres" target="blank">Froidchapelle - 13</a></li>
+						/*350*/
+						
+					</ul>
+				</li>
+				<li>G
+					<ul class="SousMenu">
+						<li ><a href ="http://actugedinne.be/conseil/" target="blank">Gedinne - 15</a></li>
+						<li ><a href ="https://www.geer.be/ma-commune/vie-politique/conseil-communal" target="blank">Geer - 13</a></li>
+						<li ><a href ="https://www.gembloux.be/ma-commune/vie-politique/conseil-communal-1" target="blank">Gembloux - 29</a></li>
+						<li ><a href ="https://www.genappe.be/commune/vie-politique/conseil-communal/composition-du-conseil" target="blank">Genappe - 25</a></li>
+						<li ><a href ="https://www.gerpinnes.be/ma-commune/vie-politique/conseil-communal/annuaire-des-conseillers/les-conseillers-communaux" target="blank">Gerpinnes - 23</a></li>
+						<li ><a href ="http://www.gesves.be/composition/" target="blank">Gesves - 19</a></li>
+						<li ><a href ="https://www.gouvy.be/ma-commune/vie-politique/conseillers/les-conseillers" target="blank">Gouvy - 17</a></li>
+						<li ><a href ="https://www.grace-hollogne.be/ma-commune/vie-politique/conseil-communal/compo" target="blank">Grâce-Hollogne - 27</a></li>
+						<li ><a href ="https://www.grez-doiceau.be/ma-commune/vie-politique/conseil-communal" target="blank">Grez-Doiceau - 23</a></li>
+						/*166*/
+					</ul>
+				</li>
+				<li>H
+					<ul class="SousMenu">
+						<li ><a href ="https://www.habay.be/ma-commune/vie-politique/conseil-communal" target="blank">Habay - 19</a></li>
+						<li ><a href ="https://www.hamoir.be/fr/ma-commune/vie-politique/conseil-communal" target="blank">Hamoir - 13</a></li>
+						<li ><a href ="https://www.hamois.be/vie-communale/vie-politique/conseil-communal/composition" target="blank">Hamois - 19</a></li>
+						<li ><a href ="https://www.ham-sur-heure-nalinnes.be/vie-politique/le-conseil-communal/composition-du-conseil-communal" target="blank">Ham-sur-Heure-Nalinnes - 23</a></li>
+						<li ><a href ="https://www.hannut.be/autorites-communales/conseil-communal/" target="blank">Hannut - 25</a></li>
+						<li ><a href ="https://www.hastiere.be/conseil-communal/" target="blank">Hastière - 17</a></li>
+						<li ><a href ="https://www.havelange.be/ma-commune/vie-politique/conseil-communal-1/presentation" target="blank">Havelange - 17</a></li>
+						<li ><a href ="https://www.helecine.be/vie-politique/conseil-communal/composition" target="blank">Hélécine - 13</a></li>
+						<li ><a href ="https://www.hensies.be/le-conseil-communal/" target="blank">Hensies - 17</a></li>
+						<li ><a href ="http://www.herbeumont.be/macommune/vie-politique/conseil-communal" target="blank">Herbeumont - 9</a></li>
+						<li ><a href ="https://www.heron.be/composition3.html" target="blank">Héron - 17</a></li>
+						<li ><a href ="https://www.herstal.be/ma-ville/vie-politique/conseil-communal/membres" target="blank">Herstal - 33</a></li>
+						<li ><a href ="https://www.herve.be/herve/contenu/ma-ville/vie-politique/conseil-communal-1/composition-du-conseil-communal" target="blank">Herve - 25</a></li>
+						<li ><a href ="https://www.honnelles.be/ma-commune/vie-politique/le-conseil-communal" target="blank">Honnelles - 17</a></li>
+						<li ><a href ="https://www.hotton.be/hotton/contenu/autorites-communales/conseil-communal-1/conseil-communal" target="blank">Hotton - 17</a></li>
+						<li ><a href ="https://www.houffalize.be/ma-commune/vie-politique/le-conseil-communal/les-conseillers-communaux-1" target="blank">Houffalize - 17</a></li>
+						<li ><a href ="https://houyet.be/vie-politique/le-conseil-communal/composition-du-conseil/" target="blank">Houyet - 15</a></li>
+						<li ><a href ="https://www.huy.be/ma-commune/vie-politique/conseil-communal" target="blank">Huy - 27</a></li>
+						/*340*/
+					</ul>
+				</li>
+				<li>I
+					<ul class="SousMenu">
+						<li ><a href ="https://www.incourt.be/ma-commune/vie-politique/conseil-communal" target="blank">Incourt - 17</a></li>
+						<li ><a href ="https://www.ittre.be/ma-commune/vie-politique/conseil-communal" target="blank">Ittre - 17</a></li>
+						/*34*/
+					</ul>
+				</li>
+				<li>J
+					<ul class="SousMenu">
+						<li ><a href ="https://www.jalhay.be/vie-politique/conseil-communal/composition/" target="blank">Jalhay - 19</a></li>
+						<li ><a href ="https://www.jemeppe-sur-sambre.be/leconseilcommunal" target="blank">Jemeppe-sur-Sambre - 25</a></li>
+						<li ><a href ="https://www.jodoigne.be/jodoigne/contenu/politique/le-conseil/composition-1" target="blank">Jodoigne - 23</a></li>
+						<li ><a href ="http://www.juprelle.be/WEBSITE/BEFR/04/Politique03.php" target="blank">Juprelle - 21</a></li>
+						<li ><a href ="https://www.jurbise.be/ma-commune/vie-politique/conseil-communal/conseillers-communaux" target="blank">Jurbise - 21</a></li>
+						/*109*/
+					</ul>
+				</li>
+				<li>K
+					<ul class="SousMenu">
+						<li ><a href ="https://www.kelmis.be/politik/gemeinderat" target="blank">Kelmis - 21</a></li>
+						/*21*/
+					</ul>
+				</li>
+				<li>L
+					<ul class="SousMenu">
+						<li ><a href ="http://labruyere.be/?page_id=3905" target="blank">La Bruyère - 21</a></li>
+						<li ><a href ="https://www.lahulpe.be/ma-commune/vie-politique/conseil-communal" target="blank">La Hulpe - 19</a></li>
+						<li ><a href ="https://www.lalouviere.be/ma-ville/vie-politique/conseil-communal/composition" target="blank">La Louvière - 43</a></li>
+						<li ><a href ="http://www.la-roche-en-ardenne.be/pages/vie_communale/conseil_communal.php" target="blank">La Roche-en-Ardenne - 15</a></li>
+						<li ><a href ="https://www.lasne.be/ma-commune/vie-politique/le-conseil-communal" target="blank">de Lasne - 17</a></li>
+						<li ><a href ="https://www.communeleglise.be/vivre-a-leglise/vie-politique/conseil-communal/" target="blank">Léglise - 17</a></li>
+						<li ><a href ="https://www.lens.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Lens - 15</a></li>
+						<li ><a href ="https://www.leroeulx.be/ma-commune/vie-politique/conseil-communal/membres-du-conseil-communal" target="blank">Le Rœulx - 19</a></li>
+						<li ><a href ="dhttps://www.les-bons-villers.be/ma-commune/vie-politique/conseil-communal-1/composition" target="blank">Les Bons Villers - 21</a></li>
+						<li ><a href ="https://www.lessines.be/ma-ville/vie-politique/conseil-communal/annuaire" target="blank">Lessines - 25</a></li>
+						<li ><a href ="https://www.leuze-en-hainaut.be/section/833/composition" target="blank">Leuze-en-Hainaut - 23</a></li>
+						<li ><a href ="https://www.libin.be/college-et-conseil-communal" target="blank">Libin - 17</a></li>
+						<li ><a href ="https://www.libramontchevigny.be/ma-commune/vie-politique/conseil-communal" target="blank">Libramont-Chevigny - 21</a></li>
+						<li ><a href ="https://www.liege.be/fr/vie-communale/vie-politique/conseil-communal#b_start=0" target="blank">Liège - 49</a></li>
+						<li ><a href ="https://lierneux.be/vie-communale/vie-politique/le-conseil-communal/" target="blank">Lierneux - 13</a></li>
+						<li ><a href ="https://www.ville-limbourg.be/ma-commune/vie-politique/conseil-communal" target="blank">Limbourg - 17</a></li>
+						<li ><a href ="https://www.lincent.be/administration/college/composition" target="blank">Lincent - 13</a></li>
+						<li ><a href ="https://www.lobbes.be/vie-communale/vie-politique/conseil-communal/composition" target="blank">Lobbes - 17</a></li>
+						<li ><a href ="https://lontzen.be/politik/gemeinderat/" target="blank">Lontzen - 17</a></li>
+						/*399*/
+					</ul>
+				</li>
+				<li>M
+					<ul class="SousMenu">
+						<li ><a href ="https://www.malmedy.be/ma-commune/vie-politique/conseil-communal/conseillers" target="blank">Malmedy - 23</a></li>
+						<li ><a href ="https://www.manage-commune.be/ma-commune/vie-politique/conseil-communal" target="blank">Manage - 27</a></li>
+						<li ><a href ="https://www.manhay.be/ma-commune/vie-politique/conseil-communal/membres-du-conseil-communal" target="blank">Manhay - 13</a></li>
+						<li ><a href ="https://www.marche.be/administration/le-conseil-communal/composition-du-conseil-communal-1583/" target="blank">Marche-en-Famenne - 25</a></li>
+						<li ><a href ="https://marchin.be/bienvenue-a-marchin/conseil-communal/" target="blank">Marchin - 17</a></li>
+						<li ><a href ="https://www.martelange.be/ma-commune/vie-politique/conseil-communal" target="blank">Martelange - 9</a></li>
+						<li ><a href ="https://www.meix-devant-virton.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Meix-devant-Virton - 11</a></li>
+						<li ><a href ="https://www.merbeslechateau.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Merbes-le-Château - 15</a></li>
+						<li ><a href ="https://www.messancy.be/ma-commune/vie-politique/conseil-communal/nos-elus" target="blank">Messancy - 19</a></li>
+						<li ><a href ="https://www.mettet.be/ma-commune/vie-politique/conseil-communal" target="blank">Mettet - 23</a></li>
+						<li ><a href ="https://www.modave.be/index.php?option=com_content&view=categories&id=194&Itemid=2357" target="blank">Modave - 15</a></li>
+						<li ><a href ="https://www.momignies.be/commune/vie-politique/conseil-communal" target="blank">Momignies - 17</a></li>
+						<li ><a href ="https://www.mons.be/ma-commune/vie-politique/conseil-communal" target="blank">Mons - 45</a></li>
+						<li ><a href ="https://montdelenclus.be/commune/politique/conseil-communal/composition/" target="blank">Mont-de-l'Enclus - 13</a></li>
+						<li ><a href ="https://www.montigny-le-tilleul.be/ma-commune/vie-politique/conseil-communal/membres" target="blank">Montigny-le-Tilleul - 21</a></li>
+						<li ><a href ="https://www.mont-saint-guibert.be/ma-commune/vie-politique/conseil-communal" target="blank">Mont-Saint-Guibert - 19</a></li>
+						<li ><a href ="https://www.morlanwelz.be/commune/vie-politique/le-conseil-communal">Morlanwelz - 25</a></li>
+						<li ><a href ="https://www.mouscron.be/fr/ma-ville/vie-politique/conseil-communal" target="blank">Mouscron - 37</a></li>
+						<li ><a href ="https://www.musson.be/ma-commune/vie-politique/conseil-communal" target="blank">Musson - 15</a></li>
+						/*389*/
+					</ul>
+				</li>
+				<li>N
+					<ul class="SousMenu">
+						<li ><a href ="https://www.namur.be/fr/ma-ville/vie-politique/conseil-communal" target="blank">Namur - 47</a></li>
+						<li ><a href ="https://www.nandrin.be/notre-commune/vie-politique/conseil-communal" target="blank">Nandrin - 17</a></li>
+						<li ><a href ="https://www.nassogne.be/ma-commune/vie-politique/conseil-communal" target="blank">Nassogne - 17</a></li>
+						<li ><a href ="https://www.neufchateau.be/fr/ma-ville/vie-politique/conseil-communal" target="blank">Neufchâteau - 19</a></li>
+						<li ><a href ="https://www.neupre.be/neupre/information/conseil-communal" target="blank">Neupré - 21</a></li>
+						<li ><a href ="https://nivelles.be/la-ville/autorites-communales/college-et-conseil-2018-2024/le-bourgmestre-pierre-huart-lb.html" target="blank">Nivelles - 29</a></li>
+						/*140*/
+					</ul>
+				</li>
+				<li>O
+					<ul class="SousMenu">
+						<li ><a href ="https://www.ohey.be/vie-politique/" target="blank">Ohey - 17</a></li>
+						<li ><a href ="https://www.olne.be/vie-politique/conseil-communal/composition" target="blank">Olne - 15</a></li>
+						<li ><a href ="https://www.onhaye.be/commune/vie-politique/conseil-communal/composition-1" target="blank">Onhaye - 13</a></li>
+						<li ><a href ="https://www.oreye.be/ma-commune/vie-politique/conseil-communal/les-membres" target="blank">Oreye - 13</a></li>
+						<li ><a href ="https://www.orp-jauche.be/conseil-communal/" target="blank">Orp-Jauche - 19</a></li>
+						<li ><a href ="https://www.olln.be/fr/ma-ville/vie-politique/conseil-communal/membres-du-conseil-communal" target="blank">Ottignies-Louvain-la-Neuve - 31</a></li>
+						<li ><a href ="https://www.ouffet.be/ma-commune/vie-politique/conseil-communal/composition-du-college" target="blank">Ouffet - 11</a></li>
+						<li ><a href ="https://www.oupeye.be/ma-commune/vie-politique/le-conseil-communal" target="blank">Oupeye - 23</a></li>
+						/*142*/
+					</ul>
+				</li>
+				<li>P
+					<ul class="SousMenu">
+						<li ><a href ="https://www.paliseul.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Paliseul - 17</a></li>
+						<li ><a href ="https://www.pecq.be/vie-administrative/vie-politique/conseil-communal" target="blank">Pecq - 17</a></li>
+						<li ><a href ="http://www.pepinster.be/College_et_Conseil.html" target="blank">Pepinster - 21</a></li>
+						<li ><a href ="https://www.peruwelz.be/ma-commune/vie-politique/conseil-communal" target="blank">Péruwelz - 25</a></li>
+						<li ><a href ="https://www.perwez.be/commune/vie-politique/conseil-communal/composition" target="blank">Perwez - 21</a></li>
+						<li ><a href ="https://www.philippeville.be/ma-commune/vie-politique/conseil-communal" target="blank">Philippeville - 21</a></li>
+						<li ><a href ="https://www.plombieres.be/plombieres/contenu/mes-elus/conseil-communal" target="blank">Plombières - 21</a></li>
+						<li ><a href ="https://www.pontacelles.be/services/le-conseil-communal/" target="blank">Pont-à-Celles - 25</a></li>
+						<li ><a href ="https://www.profondeville.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Profondeville - 23</a></li>
+						/*191*/
+					</ul>
+				</li>
+				<li>Q
+					<ul class="SousMenu">
+						<li ><a href ="https://www.quaregnon.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Quaregnon - 25</a></li>
+						<li ><a href ="http://www.quevy.be/ma-commune/vie-politique/le-conseil-communal" target="blank">Quévy - 19</a></li>
+						<li ><a href ="https://www.quievrain.be/ma-commune/vie-politique/conseil-communal" target="blank">Quiévrain - 17</a></li>
+						/*61*/
+					</ul>
+				</li>
+				<li>R
+					<ul class="SousMenu">
+						<li ><a href ="https://www.raeren.be/politik-und-buergerbeteiligung/politik/der-gemeinderat/zusammensetzung/" target="blank">Raeren - 21</a></li>
+						<li ><a href ="https://www.ramillies.be/ma-commune/vie-politique/conseil-communal" target="blank">Ramillies - 17</a></li>
+						<li ><a href ="https://www.rebecq.be/ma-commune/vie-politique/le-conseil-communal/les-membres-du-conseil-communal" target="blank">Rebecq - 21</a></li>
+						<li ><a href ="https://www.remicourt.be/commune/vie-politique/conseil-communal-2" target="blank">Remicourt - 17</a></li>
+						<li ><a href ="https://www.rendeux.be/ma-commune/vie-politique/conseil-communal" target="blank">Rendeux - 11</a></li>
+						<li ><a href ="https://www.rixensart.be/ma-commune/vie-politique/conseil-communal/composition-du-conseil-communal" target="blank">Rixensart - 27</a></li>
+						<li ><a href ="https://www.rochefort.be/commune/vie_politique/conseil-communal/composition" target="blank">Rochefort - 23</a></li>
+						<li ><a href ="https://rouvroy.be/1907/le-conseil-communal/" target="blank">Rouvroy - 11</a></li>
+						<li ><a href ="https://rumes-online.be/accueil/vie-politique/le-conseil-communal/membres-du-conseil/" target="blank">Rumes - 17</a></li>
+						/*165*/
+					</ul>
+				</li>
+				<li>S
+					<ul class="SousMenu">
+						<li ><a href ="https://www.sainte-ode.be/ma-commune/vie-politique/conseil-communal/" target="blank">Sainte-Ode - 11</a></li>
+						<li ><a href ="https://www.saint-georges-sur-meuse.be/ma-commune/vie-politique/conseil-communal" target="blank">Saint-Georges-sur-Meuse - 17</a></li>
+						<li ><a href ="https://www.saint-ghislain.be/ma-ville/vie-politique/conseil-communal/presentation" target="blank">Saint-Ghislain - 27</a></li>
+						<li ><a href ="https://www.saint-hubert.be/composition-2/" target="blank">Saint-Hubert - 17</a></li>
+						<li ><a href ="https://www.saint-leger.be/ma-commune/vie-politique/Conseil-communal" target="blank">Saint-Léger - 13</a></li>
+						<li ><a href ="https://www.saint-nicolas.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Saint-Nicolas - 27</a></li>
+						<li ><a href ="documents/comparatif_clefs/SaintVith.pdf" target="blank">Saint-Vith - 21</a></li>
+						<li ><a href ="https://www.sambreville.be/ma-commune/vie-politique/conseil-communal/le-conseil-communal-a-quoi-sert-il/composition" target="blank">Sambreville - 29</a></li>
+						<li ><a href ="https://www.seneffe.be/theme_commune/vie-politique/conseil-communal" target="blank">Seneffe - 21</a></li>
+						<li ><a href ="https://www.seraing.be/wp-content/uploads/2023/03/Liste-des-conseillers-mars-2023.pdf?x52506" target="blank">Seraing - 39</a></li>
+						<li ><a href ="https://www.silly.be/ma-commune/vie-politique/conseil-communal" target="blank">Silly - 19</a></li>
+						<li ><a href ="https://www.sivry-rance.be/ma-commune/vie-politique/conseil-communal/annuaire-des-conseillers" target="blank">Sivry-Rance - 15</a></li>
+						<li ><a href ="https://www.soignies.be/fr/commune/vie-politique/conseil-communal/" target="blank">Soignies - 29</a></li>
+						<li ><a href ="https://www.sombreffe.be/ma-commune/vie-politique/conseil-communal/composition-du-conseil" target="blank">Sombreffe - 19</a></li>
+						<li ><a href ="http://www.somme-leuze.be/vie-communale/vie-politique/conseil-communal/composition" target="blank">Somme-Leuze - 17</a></li>
+						<li ><a href ="http://www.soumagne.be/index.php?pg=122" target="blank">Soumagne - 25</a></li>
+						<li ><a href ="https://www.villedespa.be/ma-ville/vie-politique/conseil-communal/composition-du-conseil" target="blank">Spa - 21</a></li>
+						<li ><a href ="https://www.sprimont.be/ma-commune/vie-politique/conseil-communal" target="blank">Sprimont - 23</a></li>
+						<li ><a href ="https://www.stavelot.be/ma-commune/vie-politique/le-conseil-communal/membres-du-conseil" target="blank">Stavelot - 19</a></li>
+						<li ><a href ="https://stoumont.be/le-conseil-communal-2/" target="blank">Stoumont - 13</a></li>
+						/*422*/
+					</ul>
+				</li>
+				<li>T
+					<ul class="SousMenu">
+						<li ><a href ="http://www.tellin.be/commune/vie-politique/conseil-communal" target="blank">Tellin - 11</a></li>
+						<li ><a href ="http://www.tenneville.be/WEBSITE2/BEFR/03/Politique03.php" target="blank">Tenneville - 11</a></li>
+						<li ><a href ="https://www.theux.be/fr/ma-commune/vie-politique/les-elus-communaux/les-membres-du-conseil-communal" target="blank">Theux - 23</a></li>
+						<li ><a href ="https://www.thimister-clermont.be/ma-commune/vie-politique/conseil-communal" target="blank">Thimister-Clermont - 17</a></li>
+						<li ><a href ="https://www.thuin.be/ma-ville/vie-politique/conseil-communal/les-conseilles-communaux" target="blank">Thuin - 23</a></li>
+						<li ><a href ="https://www.tinlot.be/ma-commune/vie-politique/conseil-communal/composition-1" target="blank">Tinlot - 11</a></li>
+						<li ><a href ="https://www.tintigny.be/ma-commune/vie-politique/college%20communal/membres-du-conseil-communal" target="blank">Tintigny - 15</a></li>
+						<li ><a href ="https://www.tournai.be/conseil-communal/composition-du-conseil-communal-2018-2024" target="blank">Tournai - 39</a></li>
+						<li ><a href ="https://www.troisponts.be/commune/vie-politique/conseil-communal" target="blank">Trois-Ponts - 11</a></li>
+						<li ><a href ="https://www.trooz.be/ma-commune/vie-politique/conseil-communal" target="blank">Trooz - 19</a></li>
+						<li ><a href ="https://www.tubize.be/ma-ville/vie-politique/conseil-communal/conseil-communal" target="blank">Tubize - 29</a></li>
+						/*209*/
+					</ul>
+				</li>
+				<li>V
+					<ul class="SousMenu">
+						<li ><a href ="https://www.vaux-sur-sure.be/commune/vie-politique/conseil-communal" target="blank">Vaux-sur-Sûre - 17</a></li>
+						<li ><a href ="https://www.verlaine.be/ma-commune/vie-politique/le-conseil-communal/composition" target="blank">Verlaine - 15</a></li>
+						<li ><a href ="https://www.verviers.be/ma-ville/vie-politique/conseil-communal/annuaire_cc" target="blank">Verviers - 37</a></li>
+						<li ><a href ="https://www.vielsalm.be/ma-commune/vie-politique/conseil-communal" target="blank">Vielsalm - 19</a></li>
+						<li ><a href ="https://www.villers-la-ville.be/administration/vie-politique/conseil/composition-du-conseil-communal-et-apparentement" target="blank">Villers-la-Ville - 21</a></li>
+						<li ><a href ="https://www.villers-le-bouillet.be/ma-commune/vie-politique/conseil-communal" target="blank">Villers-le-Bouillet - 17</a></li>
+						<li ><a href ="https://www.viroinval.be/fr/ma-commune/vie-politique/conseil-communal/composition" target="blank">Viroinval - 17</a></li>
+						<li ><a href ="https://www.virton.be/ma-commune/vie-politique/conseil-communal/composition" target="blank">Virton - 21</a></li>
+						<li ><a href ="https://www.vise.be/ma-commune/vie-politique/conseil-communal" target="blank">Visé - 25</a></li>
+						<li ><a href ="https://www.vresse-sur-semois.be/fr/ma-commune/vie-politique/conseil-communal/les-conseillers" target="blank">Vresse-sur-Semois - 11</a></li>
+						/*200*/
+					</ul>
+				</li>
+				<li>W
+					<ul class="SousMenu">
+						<li ><a href ="https://www.waimes.be/commune/vie-politique/conseil-communal/" target="blank">Waimes - 19</a></li>
+						<li ><a href ="https://www.walcourt.be/mandataires_cat/conseil-communal/" target="blank">Walcourt - 25</a></li>
+						<li ><a href ="https://www.walhain.be/ma-commune/vie-politique/conseil-communal" target="blank">Walhain - 19</a></li>
+						<li ><a href ="https://www.wanze.be/commune/vie-politique/conseil-communal" target="blank">Wanze - 23</a></li>
+						<li ><a href ="https://www.waremme.be/ma-ville/vie-politique/conseil-communal/composition-du-conseil" target="blank">Waremme - 25</a></li>
+						<li ><a href ="https://www.wasseiges.be/ma-commune/vie-politique/conseil-communal" target="blank">Wasseiges - 11</a></li>
+						<li ><a href ="https://www.waterloo.be/ma-commune/vie-politique/conseil-communal" target="blank">Waterloo - 31</a></li>
+						<li ><a href ="https://www.wavre.be/annuaire-du-conseil-communal" target="blank">Wavre - 31</a></li>
+						<li ><a href ="https://www.welkenraedt.be/commune/politique/conseil-communal/composition-du-conseil" target="blank">Welkenraedt - 21</a></li>
+						<li ><a href ="https://www.wellin.be/ma-commune/vie-politique/conseil-communal/composition-du-conseil-communal" target="blank">Wellin - 13</a></li>
+						/*228*/
+					</ul>
+				</li>
+				<li>Y
+					<ul class="SousMenu">
+						<li ><a href ="https://www.yvoir.be/fr/ma-commune/vie-politique/conseil-communal/composition" target="blank">Yvoir - 21</a></li>
+						/*21*/
+					</ul>
+				</li>
+			</ul>
+			
+			<h2>Les 7.933 conseillers communaux flamands</h2>
+            <ul id="menu-deroulant">
+				<li >A
+					<ul class="SousMenu">
+						<li ><a href ="https://www.aalter.be/gemeenteraad" target="blank">Aalter - 29</a></li>
+						<li ><a href ="https://www.aarschot.be/personen/overzicht/2863/gemeenteraad" target="blank">Aerschot - 29</a></li>
+						<li ><a href ="https://www.aartselaar.be/college-van-burgemeester-en-schepenen" target="blank">Aartselaar - 23</a></li>
+						<li ><a href ="https://www.affligem.be/bestuur-en-diensten/bestuur/gemeenteraad-raad-voor-maatschappelijk-welzijn" target="blank">Affligem - 23</a></li>
+						<li ><a href ="https://www.alken.be/gemeente-en-ocmw-raad" target="blank">Alken - 21</a></li>
+						<li ><a href ="https://www.aalst.be/stadsbestuur/samenstelling/gemeenteraad" target="blank">Alost - 43</a></li>
+						<li ><a href ="https://www.alveringem.be/bestuur/lokaal-bestuur/gemeenteraad" target="blank">Alveringem - 17</a></li>
+						<li ><a href ="https://www.antwerpen.be/info/5571890daba8a748048b458e/gemeenteraadsleden" target="blank">Anvers - 55</a></li>
+						<li ><a href ="https://www.anzegem.be/gemeente-ocmw-raad" target="blank">Anzegem - 23</a></li>
+						<li ><a href ="https://www.ardooie.be/systems/file_download.ashx?pg=5528&ver=1" target="blank">Ardoye - 19</a></li>
+						<li ><a href ="https://arendonk.be/bestuur/politieke-organisatie/gemeenteraad" target="blank">Arendonk - 23</a></li>
+						<li ><a href ="https://www.as.be/over-as/bestuur/gemeenteraad/samenstelling-gemeenteraad" target="blank">As - 19</a></li>
+						<li ><a href ="https://www.asse.be/gemeenteraad" target="blank">Asse - 31</a></li>
+						<li ><a href ="https://www.assenede.be/nl/over-assenede-en-bestuur/bestuur/samenstelling-gem" target="blank">Assenede - 23</a></li>
+						<li ><a href ="https://www.oudenaarde.be/nl/bestuur/bestuursorganen/gemeenteraad-en-ocmw-raad/samenstelling" target="blank">Audenarde - 31</a></li>
+						<li ><a href ="https://www.oudenburg.be/gemeenteraad/samenstelling.aspx" target="blank">Audembourg - 21</a></li>
+						<li ><a href ="https://www.avelgem.be/samenstelling-gemeenteraad-0" target="blank">Avelgem - 23</a></li>
+						/*443*/
+					</ul>
+				</li>
+				<li >B
+					<ul class="SousMenu">
+						<li ><a href ="https://www.baarle-hertog.be/gemeenteraad" target="blank">Baerle-Duc - 11</a></li>
+						<li ><a href ="https://www.balen.be/raadpersoneel.aspx?id=1637" target="blank">Balen - 27</a></li>
+						<li ><a href ="https://www.beernem.be/raadpersoneel/1404/gemeenteraad#p153" target="blank">Beernem - 25</a></li>
+						<li ><a href ="https://www.beerse.be/gemeenteraad" target="blank">Beerse - 25</a></li>
+						<li ><a href ="https://www.beersel.be/raadpersoneel/2317/gemeenteraad" target="blank">Beersel - 29</a></li>
+						<li ><a href ="https://www.begijnendijk.be/gemeenteraad" target="blank">Begijnendijk - 21</a></li>
+						<li ><a href ="https://www.bekkevoort.be/gemeenteraad" target="blank">Bekkevoort - 17</a></li>
+						<li ><a href ="https://www.beringen.be/gemeenteraad" target="blank">Beringen - 35</a></li>
+						<li ><a href ="https://www.berlaar.be/producten/samenstelling" target="blank">Berlaar - 21</a></li>
+						<li ><a href ="https://www.berlare.be/raadsleden.html" target="blank">Berlare - 23</a></li>
+						<li ><a href ="https://www.bertem.be/raadpersoneel/2515/gemeenteraad---ocmw-raad" target="blank">Bertem - 21</a></li>
+						<li ><a href ="https://www.beveren.be/nl/onze-diensten/bestuur-en-participatie/bestuur/gemeenteraad-en-raad-voor-maatschappelijk-welzijn-5" target="blank">Beveren - 35</a></li>
+						<li ><a href ="https://www.bierbeek.be/gemeenteraad" target="blank">Bierbeek - 21</a></li>
+						<li ><a href ="https://www.bever-bievene.be/over-bever/bestuur/samenstelling/gemeenteraad" target="blank">Biévène - 11</a></li>
+						<li ><a href ="https://www.bilzen.be/gemeenteraad" target="blank">Bilzen - 31</a></li>
+						<li ><a href ="https://www.blankenberge.be/gemeenteraad" target="blank">Blankenberghe - 25</a></li>
+						<li ><a href ="https://bocholt.be/inwoner/onze-gemeente/gemeentebestuur/gemeenteraad/samenstelling-gemeenteraad/" target="blank">Bocholt - 23</a></li>
+						<li ><a href ="https://www.boechout.be/raadsleden" target="blank">Boechout - 23</a></li>
+						<li ><a href ="https://www.bonheiden.be/gemeenteraad-and-ocmw-raad-voor-maatschappelijk-welzijn" target="blank">Bonheiden - 23</a></li>
+						<li ><a href ="https://www.boom.be/dienst/2956/gemeenteraad" target="blank">Boom - 25</a></li>
+						<li ><a href ="https://www.boortmeerbeek.be/gemeenteraad-10" target="blank">Boortmeerbeek - 23</a></li>
+						<li ><a href ="https://www.bornem.be/raadpersoneel/1698/gemeenteraad" target="blank">Bornem - 27</a></li>
+						<li ><a href ="https://www.borsbeek.be/raadpersoneel.aspx?id=1026" target="blank">Borsbeek - 21</a></li>
+						<li ><a href ="https://www.leopoldsburg.be/gemeenteraad" target="blank">Bourg-Léopold - 25</a></li>
+						<li ><a href ="https://www.boutersem.be/samenstelling-gemeenteraad-en-rmw" target="blank">Boutersem - 19</a></li>
+						<li ><a href ="https://www.brakel.be/bekendmakingen/gemeente-en-ocmw-raad/samenstelling-gemeente-en-ocmw-raad/" target="blank">Brakel - 23</a></li>
+						<li ><a href ="https://www.brasschaat.be/bestuur-dienstverlening/gemeenteraad/gemeenteraad-samenstelling" target="blank">Brasschaat - 33</a></li>
+						<li ><a href ="https://www.brecht.be/over-brecht/politiek/gemeenteraad/gemeenteraadsleden" target="blank">Brecht - 29</a></li>
+						<li ><a href ="https://www.bredene.be/nl/bestuur/gemeenteraad-en-ocmw-raad/gemeenteraad-en-ocmw-raad-samenstelling" target="blank">Bredene - 25</a></li>
+						<li ><a href ="https://www.bree.be/beleid/bestuur/gemeenteraad/gemeenteraad" target="blank">Brée - 25</a></li>
+						<li ><a href ="https://www.brugge.be/bestuur/gemeenteraadsleden" target="blank">Bruges - 47</a></li>
+						<li ><a href ="https://www.buggenhout.be/gemeenteraad" target="blank">Buggenhout - 23</a></li>
+						/*947*/
+					</ul>					
+				</li>
+				<li >C
+					<ul class="SousMenu">
+						<li ><a href ="https://www.kortenberg.be/samenstelling-gemeenteraad" target="blank">Cortenbergh - 27</a></li>
+						<li ><a href ="https://www.kortrijk.be/gemeenteraad" target="blank">Courtrai - 41</a></li>
+						<li ><a href ="https://www.koksijde.be/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Coxyde - 27</a></li>
+						<li ><a href ="https://www.kraainem.be/fr/personnel-du-conseil/2951/conseil-communal" target="blank">Crainhem - 23</a></li>
+						/*118*/
+					</ul>
+				</li>
+				<li >D
+					<ul class="SousMenu">
+						<li ><a href ="https://www.damme.be/raadpersoneel/2500/gemeente--and-ocmw-raad" target="blank">Damme - 21</a></li>
+						<li ><a href ="https://www.deerlijk.be/gemeenteraad-ocmw-raad" target="blank">Deerlijk - 21</a></li>
+						<li ><a href ="https://www.deinze.be/dienst/2782/gemeenteraad" target="blank">Deinze - 35</a></li>
+						<li ><a href ="https://www.denderleeuw.be/bestuur/bestuursorganen/gemeenteraad-en-raad-voor-maatschappelijk-welzijn/samenstelling-gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Denderleeuw - 27</a></li>
+						<li ><a href ="https://www.dentergem.be/gemeenteraad-ocmw-raad" target="blank">Dentergem - 19</a></li>
+						<li ><a href ="https://www.dessel.be/gemeenteraad" target="blank">Dessel - 21</a></li>
+						<li ><a href ="https://www.destelbergen.be/bestuur/bestuursorganen/gemeenteraad" target="blank">Destelbergen - 25</a></li>
+						<li ><a href ="https://www.diepenbeek.be/Gemeenteraad" target="blank">Diepenbeek - 25</a></li>
+						<li ><a href ="https://www.diest.be/burger-en-overheid/bestuur/gemeenteraad/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Diest - 27</a></li>
+						<li ><a href ="https://www.dilbeek.be/nl/bestuur/gemeenteraad-raad-voor-maatschappelijk-welzijn/samenstelling-gemeenteraadocmw-raad" target="blank">Dilbeek - 35</a></li>
+						<li ><a href ="https://www.dilsen-stokkem.be/gemeenteraad" target="blank">Dilsen-Stokkem - 27</a></li>
+						<li ><a href ="https://www.diksmuide.be/raadpersoneel/1677/gemeenteraad" target="blank">Dixmude - 25</a></li>
+						<li ><a href ="https://www.drogenbos.be/fr/personnel-du-conseil/2880/conseil-communal" target="blank">Drogenbos - 17</a></li>
+						<li ><a href ="https://www.duffel.be/dienst/2732/gemeenteraad" target="blank">Duffel - 25</a></li>
+						/*350*/
+					</ul>
+				</li>
+				<li >E
+					<ul class="SousMenu">
+						<li ><a href ="https://www.edegem.be/gemeenteraad" target="blank">Edegem - 27</a></li>
+						<li ><a href ="https://www.eeklo.be/gemeenteraadsamenstelling" target="blank">Eeklo - 27</a></li>
+						<li ><a href ="https://www.erpe-mere.be/gemeenteraad" target="blank">Erpe-Mere - 25</a></li>
+						<li ><a href ="https://www.spiere-helkijn.be/samenstelling-gemeenteraad" target="blank">Espierres-Helchin - 11</a></li>
+						<li ><a href ="https://www.essen.be/raadpersoneel/1577/gemeenteraad" target="blank">Essen - 25</a></li>
+						<li ><a href ="https://www.evergem.be/dienst/3590/gemeenteraad-en-commissie" target="blank">Everghem - 33</a></li>
+						/*148*/
+					</ul>
+				</li>
+				<li >F
+					<ul class="SousMenu">
+						<li ><a href ="https://www.voeren.be/bestuur-en-beleid/bestuur/gemeenteraad/jouw-gemeenteraadsleden" target="blank">Fourons - 15</a></li>
+						<li ><a href ="https://www.veurne.be/nl/bestuur/overzicht-bestuur/gemeenteraad/samenstelling-gr" target="blank">Furnes - 21</a></li>
+						/*36*/
+					</ul>
+				</li>
+				<li >G
+					<ul class="SousMenu">
+						<li ><a href ="https://www.galmaarden.be/gemeenteraad" target="blank">Gammerages - 19</a></li>
+						<li ><a href ="https://stad.gent/nl/gemeenteraadsleden" target="blank">Gand - 53</a></li>
+						<li ><a href ="https://www.gavere.be/bestuur/gemeenteraad-en-ocmw-raad/samenstelling-gemeenteraad-en-ocmw-raad" target="blank">Gavre - 23</a></li>
+						<li ><a href ="https://www.geel.be/gemeenteraad" target="blank">Geel - 33</a></li>
+						<li ><a href ="https://www.geetbets.be/bestuur-en-diensten/bestuur/gr-or/samenstelling-gror" target="blank">Geetbets - 17</a></li>
+						<li ><a href ="https://www.genk.be/gemeenteraad-samenstelling" target="blank">Genk - 39</a></li>
+						<li ><a href ="https://www.gingelom.be/gemeenteraad-ocmw-raad-2" target="blank">Gingelom - 19</a></li>
+						<li ><a href ="https://www.gistel.be/gemeenteraad" target="blank">Gistel - 23</a></li>
+						<li ><a href ="https://www.glabbeek.be/gemeenteraad" target="blank">Glabbeek - 17</a></li>
+						<li ><a href ="https://www.gooik.be/bestuur/gemeenteraad-en-raad-voor-maatschappelijk-welzijn/samenstelling" target="blank">Gooik - 21</a></li>
+						<li ><a href ="https://www.geraardsbergen.be/gemeenteraad" target="blank">Grammont - 31</a></li>
+						<li ><a href ="https://www.grimbergen.be/raad/detail/45" target="blank">Grimbergen - 33</a></li>
+						<li ><a href ="https://www.grobbendonk.be/gemeenteraad" target="blank">Grobbendonk - 21</a></li>
+						/*349*/
+					</ul>
+				</li>
+				<li >H
+					<ul class="SousMenu">
+						<li ><a href ="https://www.haacht.be/gemeenteraad" target="blank">Haecht - 23</a></li>
+						<li ><a href ="https://www.haaltert.be/gemeenteraad" target="blank">Haaltert - 25</a></li>
+						<li ><a href ="https://www.halle.be/gemeenteraad" target="blank">Hal - 33</a></li>
+						<li ><a href ="https://www.halen.be/samenstelling-gemeenteraad" target="blank">Halen - 21</a></li>
+						<li ><a href ="https://www.ham.be/dienst/3473/gemeente-en-ocmw-raad" target="blank">Ham- 21</a></li>
+						<li ><a href ="https://www.hamme.be/raadsleden" target="blank">Hamme - 27</a></li>
+						<li ><a href ="https://www.hamont-achel.be/raadpersoneel/2034/gemeenteraad" target="blank">Hamont-Achel - 23</a></li>
+						<li ><a href ="https://www.harelbeke.be/gemeenteraad-ocmw-raad" target="blank">Harelbeke - 29</a></li>
+						<li ><a href ="https://www.hasselt.be/nl/leden-van-de-gemeenteraad-en-de-raad-voor-maatschappelijk-welzijn" target="blank">Hasselt - 41</a></li>
+						<li ><a href ="https://www.sint-lievens-houtem.be/gemeenteraad" target="blank">Hautem-Saint-Liévin - 21</a></li>
+						<li ><a href ="https://www.hechtel-eksel.be/bestuur/gemeenteraad-ocmw-raad/samenstelling" target="blank">Hechtel-Eksel - 23</a></li>
+						<li ><a href ="https://www.heers.be/bestuur-beleid/gemeenteraad/" target="blank">Heers - 19</a></li>
+						<li ><a href ="https://www.heist-op-den-berg.be/gemeenteraad" target="blank">Heist-sur-la-Montagne - 35</a></li>
+						<li ><a href ="https://www.hemiksem.be/bestuur-en-beleid/gemeenteraad" target="blank">Hemiksem - 21</a></li>
+						<li ><a href ="https://www.herk-de-stad.be/over-herk-de-stad/bestuursorganen/gemeente-en-ocmw-raad/samenstelling-gemeente-en-ocmw-raad/samenstelling-gemeente-en-ocmw-raad" target="blank">Herck-la-Ville - 23</a></li>
+						<li ><a href ="https://www.herent.be/dienst/3484/gemeenteraad-en-rmw" target="blank">Herent - 27</a></li>
+						<li ><a href ="https://www.herentals.be/bestuur/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Herentals - 29</a></li>
+						<li ><a href ="https://www.herenthout.be/gemeenteraad" target="blank">Herenthout - 19</a></li>
+						<li ><a href ="https://www.herne.be/herne-en-bestuur/bestuur-en-beleid/gemeenteraad" target="blank">Hérinnes - 17</a></li>
+						<li ><a href ="https://www.herselt.be/gemeenteraad" target="blank">Herselt - 23</a></li>
+						<li ><a href ="https://fr.wikipedia.org/wiki/Herstappe" target="blank">Herstappe - 7</a></li>
+						<li ><a href ="https://www.herzele.be/gemeenteraad" target="blank">Herzele - 25</a></li>
+						<li ><a href ="https://www.heusden-zolder.be/gemeente-ocmw-raad" target="blank">Heusden-Zolder - 31</a></li>
+						<li ><a href ="https://www.heuvelland.be/samenstelling-en-contactgegevens-gemeenteraad" target="blank">Heuvelland - 19</a></li>
+						<li ><a href ="https://www.lokaalbestuurhoegaarden.be/bestuur-en-beleid/gemeentebestuur/gemeenteraad/samenstelling-en-contactgegevens-gemeenteraad" target="blank">Hoegaarden - 17</a></li>
+						<li ><a href ="https://www.hoeilaart.be/de-gemeenteraadsleden" target="blank">Hoeilaart - 21</a></li>
+						<li ><a href ="https://www.hoeselt.be/bestuur/college-en-gemeenteraad/gemeenteraad" target="blank">Hoeselt - 21</a></li>
+						<li ><a href ="https://www.holsbeek.be/personen/overzicht/2752/gemeenteraad" target="blank">Holsbeek - 21</a></li>
+						<li ><a href ="https://www.hooglede.be/dienst/2905/gemeenteraad" target="blank">Hooglede - 21</a></li>
+						<li ><a href ="https://www.hoogstraten.be/over-hoogstraten/bestuur/gemeenteraad/raadsleden" target="blank">Hoogstraten - 27</a></li>
+						<li ><a href ="https://www.horebeke.be/bestuur/gemeenteraad/leden" target="blank">Horebeke - 11</a></li>
+						<li ><a href ="https://www.houthalen-helchteren.be/raden" target="blank">Houthalen-Helchteren - 31</a></li>
+						<li ><a href ="https://www.houthulst.be/samenstelling-gemeenteraad-raad-maatschappelijk-welzijn" target="blank">Houthulst - 21</a></li>
+						<li ><a href ="https://www.hove.be/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Hove - 19</a></li>
+						<li ><a href ="https://www.huldenberg.be/nl/bestuur/gemeente-en-ocmw-raad/leden-gemeente-en-ocmw-raad" target="blank">Huldenberg - 21</a></li>
+						<li ><a href ="https://www.hulshout.be/nl/samenstelling-gemeenteraad" target="blank">Hulshout - 21</a></li>
+						/*834*/
+					</ul>
+				</li>
+				<li >I
+					<ul class="SousMenu">
+						<li ><a href ="https://www.ingelmunster.be/gemeente-en-bestuur/bestuur/gemeenteraad/samenstelling" target="blank">Ingelmunster - 21</a></li>
+						<li ><a href ="https://www.izegem.be/gemeenteraad" target="blank">Iseghem - 29</a></li>
+						/*50*/
+					</ul>
+				</li>
+				<li >J
+					<ul class="SousMenu">
+						<li ><a href ="https://www.jabbeke.be/WebForm.aspx?ID=14" target="blank">https://www.izegem.be/gemeenteraad - 23</a></li>i>
+						/*23*/
+					</ul>
+				</li>
+				<li >K
+					<ul class="SousMenu">
+						<li ><a href ="https://kalmthout.bestuurlijkeinformatie.nl/People/Profiles/4eb4842d-1200-4e44-a057-26b1aecb9eff" target="blank">Kalmthout - 25</a></li>
+						<li ><a href ="https://www.kampenhout.be/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Kampenhout - 21</a></li>
+						<li ><a href ="https://www.kapellen.be/dienst/2942/gemeenteraad" target="blank">Kapellen - 29</a></li>
+						<li ><a href ="https://www.kapelle-op-den-bos.be/gemeenteraad" target="blank">Kapelle-op-den-Bos - 21</a></li>
+						<li ><a href ="https://www.kaprijke.be/diensten/detail/2636/gemeenteraad" target="blank">Kaprijke - 17</a></li>
+						<li ><a href ="https://www.kasterlee.be/raadpersoneel.aspx?id=1534" target="blank">Kasterlee - 25</a></li>
+						<li ><a href ="https://www.keerbergen.be/dienst/2752/gemeenteraad" target="blank">Keerbergen - 23</a></li>
+						<li ><a href ="https://www.kinrooi.be/diensten/detail/2841/gemeenteraad" target="blank">Kinrooi - 23</a></li>
+						<li ><a href ="https://www.kluisbergen.be/gemeente-en-bestuur/gemeentebestuur/gemeenteraad/samenstelling" target="blank">Kluisbergen - 17</a></li>
+						<li ><a href ="https://www.knokke-heist.be/gemeente-en-bestuur/organen/gemeenteraad" target="blank">Knokke-Heist - 31</a></li>
+						<li ><a href ="https://www.koekelare.be/gemeenteraad" target="blank">Koekelare - 19</a></li>
+						<li ><a href ="https://www.kontich.be/dienst/2958/gemeenteraad" target="blank">Kontich - 27</a></li>
+						<li ><a href ="https://www.kortemark.be/gemeenteraad" target="blank">Kortemark - 23</a></li>
+						<li ><a href ="https://www.kortenaken.be/bestuur-organisatie/bestuur/gemeente-ocmw-raad" target="blank">Kortenaken - 19</a></li>
+						<li ><a href ="https://www.kortessem.be/gemeenteraad" target="blank">Kortessem - 19</a></li>
+						<li ><a href ="https://www.kruibeke.be/gemeenteraad" target="blank">Kruibeke- 25</a></li>
+						<li ><a href ="https://www.kruisem.be/onze-gemeente/bestuur/gemeenteraad/raadsleden" target="blank">Kruisem - 25</a></li>
+						<li ><a href ="https://www.kuurne.be/samenstelling-gemeenteraad" target="blank">Kuurne - 23</a></li>
+						/*412*/
+					</ul>
+				</li>
+				<li >L
+					<ul class="SousMenu">
+						<li ><a href ="https://www.laakdal.be/de-gemeenteraad#gemeenteraadsleden" target="blank">Laakdal - 25</a></li>
+						<li ><a href ="https://www.laarne.be/raad/detail/8/gemeenteraad" target="blank">Laerne - 23</a></li>
+						<li ><a href ="https://www.sint-martens-latem.be/bestuur-en-beleid/bestuur-en-medewerkers/samenstelling-bestuursorganen/samenstelling-gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Laethem-Saint-Martin - 19</a></li>
+						<li ><a href ="https://www.lanaken.be/gemeente-en-ocmw-raad" target="blank">Lanaken - 29</a></li>
+						<li ><a href ="https://www.landen.be/gemeenteraad" target="blank">Landen - 25</a></li>
+						<li ><a href ="https://www.langemark-poelkapelle.be/raad/detail/5/gemeenteraad" target="blank">Langemark-Poelkapelle - 19</a></li>
+						<li ><a href ="https://www.depanne.be/nl/samenstelling-gemeenteraad-raad-voor-maatschappelijk-welzijn" target="blank">La Panne - 21</a></li>
+						<li ><a href ="https://www.depinte.be/samenstelling" target="blank">La Pinte - 21</a></li>
+						<li ><a href ="https://www.zoutleeuw.be/samenstelling-gemeenteraad" target="blank">Léau - 19</a></li>
+						<li ><a href ="https://www.lebbeke.be/gemeenteraad" target="blank">Lebbeke - 25</a></li>
+						<li ><a href ="https://www.dehaan.be/dienst/3504/gemeenteraad#samenstelling" target="blank">Le Coq - 23</a></li>
+						<li ><a href ="https://www.lede.be/raadpersoneel.aspx?id=1007" target="blank">Lede - 25</a></li>
+						<li ><a href ="https://www.ledegem.be/ledegem/gemeente-en-bestuur/gemeentebestuur/gemeenteraad" target="blank">Ledeghem - 21</a></li>
+						<li ><a href ="https://www.sint-pieters-leeuw.be/over-leeuw/bestuur-beleid/gemeenteraad" target="blank">Leeuw-Saint-Pierre - 31</a></li>
+						<li ><a href ="https://www.lendelede.be/gemeenteraad-ocmw-raad" target="blank">Lendelede - 17</a></li>
+						<li ><a href ="https://www.lennik.be/gemeenteraad" target="blank">Lennik - 21</a></li>
+						<li ><a href ="https://www.lichtervelde.be/gemeenteraad" target="blank">Lichtervelde - 19</a></li>
+						<li ><a href ="https://www.liedekerke.be/menu/bestuur-en-beleid/gemeentebestuur/gemeenteraad" target="blank">Liedekerke - 23</a></li>
+						<li ><a href ="https://www.lierde.be/bestuur/gemeenteraad/samenstelling" target="blank">Lierde - 17</a></li>
+						<li ><a href ="https://www.lier.be/stadsbestuur/bestuursorganen/gemeente-en-ocmw-raad/samenstelling-gemeente-en-ocmw-raad-2019-2024" target="blank">Lierre - 33</a></li>
+						<li ><a href ="https://www.lievegem.be/bestuur/bestuursorganen/gemeenteraad/samenstelling-gemeenteraad" target="blank">Lievegem - 29</a></li>
+						<li ><a href ="https://www.lille.be/gemeenteraad" target="blank">Lille - 25</a></li>
+						<li ><a href ="https://www.linkebeek.be/nl/raadpersoneel/3048/gemeenteraad" target="blank">Linkebeek - 15</a></li>
+						<li ><a href ="https://www.lint.be/gemeenteraad" target="blank">Lint - 19</a></li>
+						<li ><a href ="https://www.linter.be/bestuur/gemeenteraad/samenstelling" target="blank">Linter - 19</a></li>
+						<li ><a href ="https://www.lochristi.be/raadpersoneel/1683/gemeente--en-ocmw-raad" target="blank">Lochristi - 27</a></li>
+						<li ><a href ="https://www.lokeren.be/stad-en-bestuur/stadsbestuur/gemeenteraad%20rmw" target="blank">Lokeren - 35</a></li>
+						<li ><a href ="https://www.lommel.be/raadpersoneel/2126/gemeenteraad" target="blank">Lommel - 31</a></li>
+						<li ><a href ="https://www.londerzeel.be/gemeente-ocmw-raad" target="blank">Londerzeel - 25</a></li>
+						<li ><a href ="https://www.borgloon.be/samenstelling-gemeenteraad" target="blank">Looz - 21</a></li>
+						<li ><a href ="https://www.lo-reninge.be/gemeenteraad" target="blank">Lo-Reninge - 13</a></li>
+						<li ><a href ="https://www.leuven.be/gemeenteraad-samenstelling" target="blank">Louvain - 47</a></li>
+						<li ><a href ="https://www.lubbeek.be/gemeenteraad" target="blank">Lubbeek - 23</a></li>
+						<li ><a href ="https://www.lummen.be/over-lummen/bestuur-en-organisatie/bestuur-gemeente-en-ocmw/gemeente-en-raad-voor-maatschappelijk-welzijn" target="blank">Lummen - 23</a></li>
+						/*808*/
+					</ul>
+				</li>
+				<li >M
+					<ul class="SousMenu">
+						<li ><a href ="https://www.maarkedal.be/nl/beleid/bestuur/gemeenteraad" target="blank">Markedal - 17</a></li>
+						<li ><a href ="https://www.maaseik.be/samenstelling-gemeente-en-ocmw-raad" target="blank">Maaseik - 29</a></li>
+						<li ><a href ="https://www.maasmechelen.be/gemeenteraad" target="blank">Maasmechelen - 33</a></li>
+						<li ><a href ="https://www.machelen.be/raden" target="blank">Machelen - 25</a></li>
+						<li ><a href ="https://www.maldegem.be/samenstelling-gemeente-ocmw-raad" target="blank">Maldegem - 27</a></li>
+						<li ><a href ="https://www.mechelen.be/samenstelling-gemeenteraad-2019-2024" target="blank">Malines - 43</a></li>
+						<li ><a href ="https://www.malle.be/samenstelling-gemeenteraad" target="blank">Malle - 23</a></li>
+						<li ><a href ="https://www.meerhout.be/gemeenteraad" target="blank">Meerhout - 21</a></li>
+						<li ><a href ="https://www.meise.be/raadpersoneel/2491/gemeenteraad" target="blank">Meise - 25</a></li>
+						<li ><a href ="https://www.melle.be/gemeenteraad" target="blank">Melle - 21</a></li>
+						<li ><a href ="https://www.menen.be/gemeenteraad-en-raadsleden" target="blank">Menin - 31</a></li>
+						<li ><a href ="https://www.merchtem.be/raadpersoneel/2712/gemeenteraad" target="blank">Merchtem - 25</a></li>
+						<li ><a href ="https://www.merelbeke.be/lokaal-bestuur/bestuur/gemeenteraad-raad-voor-maatschappelijk-welzijn/raadsleden" target="blank">Merelbeke - 27</a></li>
+						<li ><a href ="https://www.merksplas.be/gemeente-en-ocmwraad" target="blank">Merksplas - 19</a></li>
+						<li ><a href ="https://www.mesen.be/gemeenteraad-2" target="blank">Messines - 9</a></li>
+						<li ><a href ="https://www.meulebeke.be/raad/detail/14/gemeenteraad" target="blank">Meulebeke - 21</a></li>
+						<li ><a href ="https://www.middelkerke.be/nl/over-middelkerke/bestuur/gemeenteraad/leden-van-de-gemeenteraad" target="blank">Middelkerke - 25</a></li>
+						<li ><a href ="https://moerbeke.be/bestuur-en-beleid/lokaal-bestuur/gemeenteraad/" target="blank">Moerbeke - 17</a></li>
+						<li ><a href ="https://www.gemeentemol.be/gemeenteraad" target="blank">Mol - 33</a></li>
+						<li ><a href ="https://www.scherpenheuvel-zichem.be/stad-en-bestuur/stadsbestuur/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Montaigu-Zichem - 27</a></li>
+						<li ><a href ="https://www.moorslede.be/samenstelling_raadsleden-website-2019_2024_vanaf_jan_2023-2" target="blank">Moorslede - 21</a></li>
+						<li ><a href ="https://www.mortsel.be/gemeenteraad" target="blank">Mortsel - 29</a></li>
+						/*548*/
+					</ul>
+				</li>
+				<li >N
+					<ul class="SousMenu">
+						<li ><a href ="https://www.nazareth.be/besturen/bestuursorganen/gemeente-en-ocmw-raad" target="blank">Nazareth - 21</a></li>
+						<li ><a href ="https://www.niel.be/dienst/2864/gemeenteraad" target="blank">Niel - 21</a></li>
+						<li ><a href ="https://www.nieuwpoort.be/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Nieuport - 21</a></li>
+						<li ><a href ="https://www.nieuwerkerken.be/samenstelling-gemeenteraad" target="blank">Nieuwerkerken - 17</a></li>
+						<li ><a href ="https://www.nijlen.be/bestuur/gemeenteraad-2019-2026" target="blank">Nijlen - 27</a></li>
+						<li ><a href ="https://www.ninove.be/samenstelling-gemeenteraad-2" target="blank">Ninove - 33</a></li>
+						/*140*/
+					</ul>
+				</li>
+				<li >O
+					<ul class="SousMenu">
+						<li ><a href ="https://www.olen.be/gemeenteraad" target="blank">Olen - 21</a></li>
+						<li ><a href ="https://oosterzele.be/samenstelling.html" target="blank">Oosterzele - 23</a></li>
+						<li ><a href ="https://www.oostkamp.be/gemeenteraad" target="blank">Oostkamp - 27</a></li>
+						<li ><a href ="https://www.oostrozebeke.be/gemeenteraad" target="blank">Oostrozebeke - 19</a></li>
+						<li ><a href ="https://www.opwijk.be/samenstelling-gemeenteraad" target="blank">Opwijk - 23</a></li>
+						<li ><a href ="https://www.oostende.be/samenstelling-gemeenteraad" target="blank">Ostende - 41</a></li>
+						<li ><a href ="https://www.oud-heverlee.be/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Oud-Heverlee - 21</a></li>
+						<li ><a href ="https://www.oudsbergen.be/raad/detail/10/gemeenteraad" target="blank">Oudsbergen - 27</a></li>
+						<li ><a href ="https://www.overijse.be/raad/detail/53/gemeenteraad" target="blank">Overijse - 29</a></li>
+						/*231*/
+					</ul>
+				</li>
+				<li >P
+					<ul class="SousMenu">
+						<li ><a href ="https://www.peer.be/gemeenteraad" target="blank">Peer - 25</a></li>
+						<li ><a href ="https://www.gemeentepelt.be/gemeenteraad" target="blank">Pelt - 31</a></li>
+						<li ><a href ="https://www.pepingen.be/bestuur-beleid/gemeenteraad-ocmw-raad/gemeenteraad-samenstelling" target="blank">Pepingen - 15</a></li>
+						<li ><a href ="https://www.pittem.be/nl/onze-gemeente/bestuur/gemeenteraad-en-ocmw-raad-" target="blank">Pittem - 17</a></li>
+						<li ><a href ="https://www.poperinge.be/gemeenteraad" target="blank">Poperinge - 25</a></li>
+						<li ><a href ="https://www.putte.be/gemeenteraad" target="blank">Putte - 25</a></li>
+						<li ><a href ="https://www.puurs-sint-amands.be/nieuwe-gemeenteraadsleden" target="blank">Puers-Saint-Amand - 29</a></li>
+						/*167*/
+					</ul>
+				</li>
+				<li >R
+					<ul class="SousMenu">
+						<li ><a href ="https://www.ranst.be/raadpersoneel/2715/gemeenteraad" target="blank">Ranst - 25</a></li>
+						<li ><a href ="https://www.ravels.be/raad/detail/3/gemeenteraad" target="blank">Ravels - 23</a></li>
+						<li ><a href ="https://www.ronse.be/nl/gemeenteraadsleden-2019-2024" target="blank">Renaix - 29</a></li>
+						<li ><a href ="https://www.retie.be/gemeenteraad" target="blank">Rethy - 21</a></li>
+						<li ><a href ="https://www.sint-genesius-rode.be/nl/raadpersoneel/2600/gemeenteraad" target="blank">Rhode-Saint-Genèse - 25</a></li>
+						<li ><a href ="https://www.riemst.be/nl/bestuur-organisatie/bestuur/gemeenteraad" target="blank">Riemst - 25</a></li>
+						<li ><a href ="https://www.rijkevorsel.be/over-rijkevorsel/bestuur/gemeenteraad/samenstelling-gemeenteraad" target="blank">Rijkevorsel - 21</a></li>
+						<li ><a href ="https://www.roosdaal.be/contactgegevens/mandatarissen" target="blank">Roosdaal - 21</a></li>
+						<li ><a href ="https://www.rotselaar.be/samenstelling-gemeenteraad" target="blank">Rotselaer - 25</a></li>
+						<li ><a href ="https://www.roeselare.be/stad-bestuur/bestuur/gemeenteraad-en-ocmw-raad" target="blank">Roulers - 39</a></li>
+						<li ><a href ="https://www.ruiselede.be/raad/detail/2/gemeenteraad" target="blank">Ruiselede - 17</a></li>
+						<li ><a href ="https://www.rumst.be/raadpersoneel/2525/gemeenteraad" target="blank">Rumst - 25</a></li>
+						/*296*/
+					</ul>
+				</li>
+				<li >S
+					<ul class="SousMenu">
+						
+						<li ><a href ="https://www.sint-gillis-waas.be/bestuur-en-beleid/gemeenteraad-en-ocmw-raad/samenstelling" target="blank">Saint-Gilles-Waes - 25</a></li>
+						<li ><a href ="https://www.sint-laureins.be/gemeenteraad-raad-voor-maatschappelijk-welzijn" target="blank">Saint-Laurent - 17</a></li>
+						<li ><a href ="https://www.sint-niklaas.be/onze-dienstverlening/bestuur-en-participatie/politieke-organen/gemeente-en-ocmw-raad#tabs-32127" target="blank">Saint-Nicolas - 41</a></li>
+						<li ><a href ="https://www.sint-truiden.be/gemeenteraad" target="blank">Saint-Trond - 35</a></li>
+						<li ><a href ="https://www.schelle.be/bestuur-beleid/gemeenteraad/raadsleden/" target="blank">Schelle - 19</a></li>
+						<li ><a href ="https://www.schilde.be/dienstverlening/bestuur-en-participatie/politiek/gemeenteraad-en-raad-voor-maatschappelijk-0" target="blank">Schilde - 25</a></li>
+						<li ><a href ="https://www.schoten.be/over-schoten/bestuur/gemeenteraad/samenstelling-gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Schoten - 31</a></li>
+						<li ><a href ="https://www.stabroek.be/bestuur/bestuursorganen/gemeenteraadraad-voor-maatschappelijk-welzijn/samenstelling-gemeenteraadraad-voor-maatschappelijk-welzijn" target="blank">Stabroek - 25</a></li>
+						<li ><a href ="https://www.staden.be/raadpersoneel/2526/gemeenteraad" target="blank">Staden - 21</a></li>
+						<li ><a href ="https://www.steenokkerzeel.be/diensten/detail/2761/gemeenteraad" target="blank">Steenockerzeel - 23</a></li>
+						<li ><a href ="https://www.stekene.be/gemeenteraadsleden" target="blank">Stekene - 25</a></li>
+						/*287*/
+					</ul>
+				</li>
+				<li >T
+					<ul class="SousMenu">
+						<li ><a href ="https://www.temse.be/gemeenteraad" target="blank">Tamise - 29</a></li>
+						<li ><a href ="https://www.dendermonde.be/samenstelling-en-werking-gemeenteraad-raad-voor-maatschappelijk-welzijn" target="blank">Termonde - 35</a></li>
+						<li ><a href ="https://www.ternat.be/gemeenteraadraadvoormaatschappelijkwelzijn" target="blank">Ternat - 25</a></li>
+						<li ><a href ="https://www.tervuren.be/gemeenteraad" target="blank">Tervueren - 27</a></li>
+						<li ><a href ="https://www.tessenderlo.be/gemeenteraad" target="blank">Tessenderlo - 25</a></li>
+						<li ><a href ="https://www.torhout.be/dienst/3893/gemeenteraad-2019-2024" target="blank">Thourout - 27</a></li>
+						<li ><a href ="https://www.tielt.be/raadpersoneel/2524/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Tielt - 25</a></li>
+						<li ><a href ="https://www.tielt-winge.be/gemeenteraad" target="blank">Tielt-Winge - 21</a></li>
+						<li ><a href ="https://www.tienen.be/samenstelling-gemeenteraad" target="blank">Tirlemont - 31</a></li>
+						<li ><a href ="https://www.tongeren.be/gemeenteraad-en-OCMW-raad" target="blank">Tongres - 31</a></li>
+						<li ><a href ="https://www.tremelo.be/raad/2793/gemeenteraad-gr" target="blank">Tremelo - 23</a></li>
+						<li ><a href ="https://www.turnhout.be/samenstelling-gemeenteraad" target="blank">Turnhout - 35</a></li>
+						/*334*/
+					</ul>
+				</li>
+				<li >V
+					<ul class="SousMenu">
+						<li ><a href ="https://www.oud-turnhout.be/raad/detail/4/gemeenteraad" target="blank">Vieux-Turnhout - 23</a></li>
+						<li ><a href ="https://www.vilvoorde.be/gemeenteraad" target="blank">Vilvorde - 35</a></li>
+						<li ><a href ="https://www.vleteren.be/bestuur/politieke-organisatie/gemeenteraad" target="blank">Vleteren - 13</a></li>
+						<li ><a href ="https://vorselaar.be/gemeente-bestuur/bestuur-diensten/gemeente-en-ocmw-raad/samenstelling/" target="blank">Vorselaer - 19</a></li>
+						<li ><a href ="https://www.vosselaar.be/gemeenteraad" target="blank">Vosselaer - 21</a></li>
+						/*111*/
+					</ul>
+				</li>
+				<li >W
+					<ul class="SousMenu">
+						<li ><a href ="https://www.waasmunster.be/dienst/3017/samenstelling" target="blank">Waesmunster - 21</a></li>
+						<li ><a href ="https://www.wachtebeke.be/bestuur/gemeente-ocmw/gemeenteraad-en-ocmw-raad/samenstelling-gemeenteraad" target="blank">Wachtebeke - 19</a></li>
+						<li ><a href ="https://www.waregem.be/gemeenteraad" target="blank">Waregem - 33</a></li>
+						<li ><a href ="https://www.sintkatelijnewaver.be/diensten/detail/2791/samenstelling-gemeenteraad" target="blank">Wavre-Sainte-Catherine - 27</a></li>
+						<li ><a href ="https://www.wellen.be/nl/gemeenteraad" target="blank">Wellen - 19</a></li>
+						<li ><a href ="https://www.wemmel.be/nl/raadpersoneel/2689/gemeenteraad" target="blank">Wemmel - 25</a></li>
+						<li ><a href ="https://www.wervik.be/gemeenteraad-en-ocmw-raad" target="blank">Wervicq - 25</a></li>
+						<li ><a href ="https://www.westerlo.be/bestuur-en-organisatie/bestuur/gemeenteraad-en-raad-voor-maatschappelijk-welzijn" target="blank">Westerlo - 27</a></li>
+						<li ><a href ="https://www.wetteren.be/de-gemeenteraad" target="blank">Wetteren - 29</a></li>
+						<li ><a href ="https://www.wevelgem.be/samenstelling-gemeenteraad" target="blank">Wevelgem - 31</a></li>
+						<li ><a href ="https://www.wezembeek-oppem.be/gemeenteraad" target="blank">Wezembeek-Oppem - 23</a></li>
+						<li ><a href ="https://www.wichelen.be/raad/detail/1/gemeenteraad" target="blank">Wichelen - 21</a></li>
+						<li ><a href ="https://www.wielsbeke.be/gemeenteraad" target="blank">Wielsbeke - 21</a></li>
+						<li ><a href ="https://www.wijnegem.be/gemeenteraad" target="blank">Wijnegem - 21</a></li>
+						<li ><a href ="https://www.willebroek.be/nl/over-willebroek/bestuur/gemeenteraad/samenstelling-gemeenteraad" target="blank">Willebroek - 27</a></li>
+						<li ><a href ="https://www.wingene.be/gemeenteraad" target="blank">Wingene - 23</a></li>
+						<li ><a href ="https://www.wommelgem.be/gemeenteraad" target="blank">Wommelghem - 23</a></li>
+						<li ><a href ="https://www.wortegem-petegem.be/Bestuur/Gemeenteraad" target="blank">Wortegem-Petegem - 17</a></li>
+						<li ><a href ="https://www.wuustwezel.be/de-gemeenteraad-van-wuustwezel" target="blank">Wuustwezel - 27</a></li>
+						/*459*/
+					</ul>
+				</li>
+				<li >Y
+					<ul class="SousMenu">
+						<li ><a href ="https://www.ieper.be/gemeenteraad" target="blank">Ypres - 31</a></li>
+						/*31*/
+					</ul>
+				</li>
+				<li >Z
+					<ul class="SousMenu">
+						<li ><a href ="https://www.zandhoven.be/beleid-en-bestuur/bestuur/gemeenteraad-en-ocmwraad/" target="blank">Zandhoven - 23</a></li>
+						<li ><a href ="https://www.zaventem.be/raad/detail/4/gemeenteraad" target="blank">Zaventem - 31</a></li>
+						<li ><a href ="https://www.zedelgem.be/gemeenteraad" target="blank">Zedelghem - 27</a></li>
+						<li ><a href ="https://www.zele.be/diensten/detail/2757/gemeenteraad" target="blank">Zele - 27</a></li>
+						<li ><a href ="https://www.zelzate.be/nl/over-zelzate-en-bestuur/bestuur/samenstelling-gem" target="blank">Zelzate - 23</a></li>
+						<li ><a href ="https://www.zemst.be/gemeenteraad" target="blank">Zemst - 27</a></li>
+						<li ><a href ="https://www.zoersel.be/node/769" target="blank">Zoersel - 27</a></li>
+						<li ><a href ="https://www.zonhoven.be/gemeenteraad" target="blank">Zonhoven - 27</a></li>
+						<li ><a href ="https://www.zonnebeke.be/dienstverlening-bestuur/bestuur-en-beleid/bestuursorganen/gr-rmw/" target="blank">Zonnebeke - 23</a></li>
+						<li ><a href ="https://www.zottegem.be/over-zottegem-en-haar-bestuur/het-bestuur/gemeenteraad/samenstelling-gemeenteraad" target="blank">Zottegem - 29</a></li>
+						<li ><a href ="https://mebosoft.be/zuienkerke_gemeente/index.php?option=com_content&view=article&id=48&Itemid=1109" target="blank">Zuyenkerque - 11</a></li>
+						<li ><a href ="https://www.zulte.be/bestuur/bestuur-gemeente/gemeenteraad/samenstelling-van-de-gemeenteraad" target="blank">Zulte - 25</a></li>
+						<li ><a href ="https://www.zutendaal.be/bestuur/gemeenteraad/samenstelling-gemeenteraad-raad-voor-maatschappelijk-welzijn" target="blank">Zutendaal - 19</a></li>
+						<li ><a href ="https://www.zwalm.be/over-zwalm/over-het-gemeentebestuur/gemeenteraad" target="blank">Zwalin - 19</a></li>
+						<li ><a href ="https://www.zwevegem.be/samenstelling-gemeenteraad-en-ocmwraad" target="blank">Zwevegem - 27</a></li>
+						<li ><a href ="https://www.zwijndrecht.be/gemeenteraad" target="blank">Zwijndrecht - 25</a></li>
+						/*390*/
+					</ul>
+				</li>
+			</ul>
+			<p>Pour information, selon le Code de la Démocratie Locale et la Décentralisation :<br>
+			Art. L1122-3. Le conseil communal, y compris le bourgmestre et les échevins, est composé de :<br>
+				<ul class="SousMenu">
+					<li>7 membres dans les communes de moins de 1 000 habitants;</li>
+					<li>9 membres dans celles de 1 000 à 1 999 habitants;</li>
+					<li>11 membres dans celles de 2 000 à 2 999 habitants;</li>
+					<li>13 membres dans celles de 3 000 à 3 999 habitants;</li>
+					<li>15 membres dans celles de 4 000 à 4 999 habitants;</li>
+					<li>17 membres dans celles de 5 000 à 6 999 habitants;</li>
+					<li>19 membres dans celles de 7 000 à 8 999 habitants;</li>
+					<li>21 membres dans celles de 9 000 à 11 999 habitants;</li>
+					<li>23 membres dans celles de 12 000 à 14 999 habitants;</li>
+					<li>25 membres dans celles de 15 000 à 19 999 habitants;</li>
+					<li>27 membres dans celles de 20 000 à 24 999 habitants;</li>
+					<li>29 membres dans celles de 25 000 à 29 999 habitants;</li>
+					<li>31 membres dans celles de 30 000 à 34 999 habitants;</li>
+					<li>33 membres dans celles de 35 000 à 39 999 habitants;</li>
+					<li>35 membres dans celles de 40 000 à 49 999 habitants;</li>
+					<li>37 membres dans celles de 50 000 à 59 999 habitants;</li>
+					<li>39 membres dans celles de 60 000 à 69 999 habitants;</li>
+					<li>41 membres dans celles de 70 000 à 79 999 habitants;</li>
+					<li>43 membres dans celles de 80 000 à 89 999 habitants;</li>
+					<li>45 membres dans celles de 90 000 à 99 999 habitants;</li>
+					<li>47 membres dans celles de 100 000 à 149 999 habitants;</li>
+					<li>49 membres dans celles de 150 000 à 199 999 habitants;</li>
+					<li>51 membres dans celles de 200 000 à 249 999 habitants;</li>
+					<li>53 membres dans celles de 250 000 à 299 999 habitants;</li>
+					<li>55 membres dans celles de 300 000 habitants et plus.</li>
+				</ul>
+			<p>
+			<a href="mailto:eric.victor.dumont@gmail.com">Signalez une erreur !</a><br><br>
+			<a href="#">haut de page</a>
+			
+			<hr>
+			</p>
+        </body>
+    </div>
+</html>
