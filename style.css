@@ -121,7 +121,8 @@ justify-content: center;
     padding:10px;
 }
 #menu-deroulant ul li {
-    padding:10px;
+    display: flex;
+	padding:10px;
     background:green;
     color:white;
 	border-radius: 10px;
