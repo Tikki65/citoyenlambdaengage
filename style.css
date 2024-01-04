@@ -1,206 +1,197 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 #bloc_page {
-    max-width: 100%;
-    height: auto;
-    margin-left: 10%;
-    margin-right: 10%
+	max-width: 100%;
+	height: auto;
+    	margin-left: 10%;
+    	margin-right: 10%
 }
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    background-color: white;
-    border-bottom: solid orange;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;*/
-    z-index: 100;
-    
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	padding: 1.3rem 10%;
+    	background-color: white;
+    	border-bottom: solid orange;
+    	display: flex;
+    	justify-content: space-between;
+    	text-align: center;*/
+    	z-index: 100;
 }
-#logocfh{
-    max-height: 80px;
+#logocfh {
+    	max-height: 80px;
 }
 .navbar a {
-    font-size: 1.2em;
-    color: green;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 2.5rem;
+    	font-size: 1.2em;
+    	color: green;
+    	text-decoration: none;
+    	font-weight: 500;
+    	margin-left: 2.5rem;
 }
 .navbar a:hover {
-    color: red;
+    	color: red;
 }
 #check {
-    display: none;
+    	display: none;
 }
 .icons {
-    position:absolute;
-    right: 5%;
-    font-size: 2.8rem;
-    color: green;
-    cursor: pointer;
-    display: none;
-    align-items: center;
+    	position:absolute;
+    	right: 5%;
+    	font-size: 2.8rem;
+    	color: green;
+   	cursor: pointer;
+    	display: none;
+    	align-items: center;
 }
-body{
-    min-height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.2em;
-    background-color: ivory;
-    padding-top: 125px;
+body {
+    	min-height: 100vh;
+    	margin: 0px;
+    	padding: 0px;
+    	font-size: 1.2em;
+    	background-color: ivory;
+    	padding-top: 125px;
 }
-p{
-text-align: justify;
-color: green;
-padding: 10px;
-overflow: auto;}
-h1{
-text-align: center;
-color: 	#C86814;
+p {
+    	text-align: justify;
+	color: green;
+	padding: 10px;
+	overflow: auto;}
+h1 {
+	text-align: center;
+	color: 	#C86814;
 }	
-h2
-{
-color: #F5C51D;
-text-shadow: 0.02em 0.05em 0.0em brown;/}
-h3
-{
-color: #C86400;
-text-decoration: underline;	
+h2 {
+	color: #F5C51D;
+	text-shadow: 0.02em 0.05em 0.0em brown;/}
+h3 {
+	color: #C86400;
+	text-decoration: underline;	
 }
-li
-{
-color: green;	
+li {
+	color: green;	
 }
 tr, td, th {
-text-align: center;
-padding: 0px 0px 0px 15px;color: green;
+	text-align: center;
+	padding: 0px 0px 0px 15px;color: green;
 }
-video
-{
-max-width: 80%;
-height: auto;	
+video {
+	max-width: 80%;
+	height: auto;	
 }
-span
-{
-display: flex;
-justify-content: center;
+span {
+	display: flex;
+	justify-content: center;
 }
-#flex-container{
+#flex-container {
 	display: flex;
 	flex-flow: wrap;
 	height: auto;	
 }
-#citation{
-    text-align: center;
-    color: #AA8866;
+#citation {
+    	text-align: center;
+    	color: #AA8866;
 }
-#petit{
-    color: #C86400;
+#petit {
+    	color: #C86400;
 }
 /*Menu-deroulant*/
 #menu-deroulant, #menu-deroulant ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    	padding: 0;
+    	margin: 0;
+    	list-style: none;
 }
 #menu-deroulant {
-    background:orange;
-    color:white;
-    border-radius: 5px;
+	background:orange;
+    	color:white;
+    	border-radius: 5px;
 }
 #menu-deroulant li {
-    display: inline-block;
-    margin:0px 19px;
-    padding:10px;
+    	display: inline-block;
+    	margin:0px 19px;
+    	padding:10px;
 }
 #menu-deroulant ul li {
-    display: flex;
+    	display: flex;
 	padding:10px;
-    background:green;
-    color:white;
+    	background:green;
+    	color:white;
 	border-radius: 10px;
 }
 #menu-deroulant a {
-    text-decoration: none;
-    color:white;
+    	text-decoration: none;
+    	color:white;
 }
 #menu-deroulant ul {
-    position: absolute;
-    text-align:left;
-    margin:10px 0px 0px -14px ;
-    display:none;
+    	position: absolute;
+    	text-align:left;
+    	margin:10px 0px 0px -14px ;
+    	display:none;
 }
 #menu-deroulant li:hover ul {
-    display:block;
+    	display:block;
 }
  
-#menu-deroulant li:hover{
-    background:gray;
+#menu-deroulant li:hover {
+    	background:gray;
 }
-.SousMenu{
-    display: block;
+.SousMenu {
+    	display: block;
 }
-.element{
-	border: 2px solid green;
-	border-radius: 10px;
-	box-shadow: 2px 2px 0px green;
-	width: 300px;
-	height: 100px;
-	background-color: #F5C51D;
-	margin: auto;
-	padding: 0px 15px 0px 15px;
+.element {
+		border: 2px solid green;
+		border-radius: 10px;
+		box-shadow: 2px 2px 0px green;
+		width: 300px;
+		height: 100px;
+		background-color: #F5C51D;
+		margin: auto;
+		padding: 0px 15px 0px 15px;
 }
-.img{
-max-width: 80%;
-height: auto;
+.img {
+	max-width: 80%;
+	height: auto;
 }
-.img_resp{
-width: 50%;
+.img_resp {
+	width: 50%;
 }
-/*.imgfloatV{
-float: right;
-}*/
-.underline{
-text-decoration: underline;
-color: green;
+.underline {
+	text-decoration: underline;
+	color: green;
 }
-.center{
-text-align: center;
-text-decoration: embed;
-color: 	#C86400;
+.center {
+	text-align: center;
+	text-decoration: embed;
+	color: 	#C86400;
 }
-.niv2{
-color: #C86400;
-text-decoration: underline;	
+.niv2 {
+	color: #C86400;
+	text-decoration: underline;	
 }
-.niv3{
-color: #AA8866;
-padding-left: 5%;
-text-decoration: underline;
+.niv3 {
+	color: #AA8866;
+	padding-left: 5%;
+	text-decoration: underline;
 }
-.niv4{
-color: #AA8866;
-text-decoration: underline;
+.niv4 {
+	color: #AA8866;
+	text-decoration: underline;
 }
-.petniv1{
-text-align: center;
-text-decoration: underline;
+.petniv1 {
+	text-align: center;
+	text-decoration: underline;
 }
-.petsur{
-border-top: solid 1px green;	
+.petsur {
+	border-top: solid 1px green;	
 }
-.petenc{
-border: solid 1px green;	
+.petenc {
+	border: solid 1px green;	
 }
-.attn{
-color : #AA8866;
+.attn {
+	color : #AA8866;
 }
 /*--------------------------------------------------------------Smartphones-------------------------------------------------------------*/
 @media (max-width:1200px) {
