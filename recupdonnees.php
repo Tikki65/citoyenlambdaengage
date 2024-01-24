@@ -33,6 +33,13 @@
 		</header>
 		<body>
       <h1>Afficage des données issues du formulaire</h1>
+	<ul>
+		<li><?php echo $_POST['nom']; ?></li>
+		<li><?php echo $_POST['prenom']; ?></li>
+		<li><?php echo $_POST['date_de_naissance']; ?></li>
+		<li><?php echo $_POST['code_postal']; ?></li>
+		<li><?php echo $_POST['signatureCanvas']; ?></li>
+	</ul>
 
     </body>
   </div>
