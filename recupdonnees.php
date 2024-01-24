@@ -32,7 +32,7 @@
 			</nav>
 		</header>
 		<body>
-      <h1>Afficage des données issues du formulaire</h1>
+      <h1>Affichage des données issues du formulaire</h1>
 	<ul>
 		<li><?php echo $_POST['nom']; ?></li>
 		<li><?php echo $_POST['prenom']; ?></li>
