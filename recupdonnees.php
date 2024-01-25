@@ -34,6 +34,15 @@
 		<body>
       <h1>Affichage des données issues du formulaire</h1>
 	<?php
+
+	$nom = $_POST['nom'];
+	$prenom = $_POST['prenom'];
+	$date_de_naissance = $_POST['date_de-naissance'];
+	$code_postal = $_POST['code_postal'];
+	$signatureCanvas = $_POST['signatureCanvas'];
+
+	$message = "nom:".$nom."\n"."prenom:".$prenom."\n"."date_de_naissance:".$date_de_naissance."\n"."code_postal:".$code_postal."\n"."signatureCanvas:".$signatureCanvas."\n".
+
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -52,21 +61,21 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = '';                     //SMTP username
-    $mail->Password   = '';                               //SMTP password
+    $mail->Username   = 'eric.victor.dumont@gmail.com';                     //SMTP username
+    $mail->Password   = 'yefi lyec uniy didk';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('from@example.com', 'citoyenlambdaengage.be');
-    $mail->addAddress('');     //Add a recipient
+    $mail->addAddress('eric.victor.dumont@gmail.com');     //Add a recipient
 
    
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Body    = $message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
