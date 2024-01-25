@@ -197,6 +197,12 @@ span {
 	padding-left:5px;
 	border: 1px solid #000;
 }
+#clearButton{
+	margin-left: 5px;
+}
+#saveButton{
+	margin-left: 5px;
+}
 /*--------------------------------------------------------------Smartphones-------------------------------------------------------------*/
 @media (max-width:1200px) {
     .header{
