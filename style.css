@@ -195,7 +195,7 @@ span {
 }
 canvas{
 	padding-left:5px;
-	border: 1px solid #000;
+	border: 1px solid black;
 }
 #clearButton{
 	margin-left: 5px;
