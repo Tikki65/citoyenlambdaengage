@@ -9,26 +9,29 @@ class Signature{
     this.ctx.strokeStyle = "blue"
     this.ctx.lineWidth = 2
 
-    this.canvas.addEventListener("mousedown", (e) =>){
+    this.canvas.addEventListener("mousedown", (e) =>{
       //je signe
       this.sign = true
 
       //je stocke mes coordonnées de départ
       this.prevX = eclientX - this.canvas.offsetLeft
       this.prevY = eclientY - this.canvas.offsetTop
-    }
+    })
 
-    this.canvas.addEventListener("mousemove", (e) =>){
+    this.canvas.addEventListener("mousemove", (e) =>{
       //si je signe
       if(this.sign){
         let currX = eclientX - this.canvas.offsetLeft
         let currY = eclientY - this.canvas.offsetTop
+        this.draw(this.prevX, this.prevY, currX, currY)
       }
-
-      //je stocke mes coordonnées de départ
-      this.prevX = 
-      this.prevY = 
-    }                             
+    })                           
   }
-
+draw(depX, depY, destX, destY){
+  this.ctx.beginPath()
+  this.ctx.moveTo(depX, depY)
+  this.ctx.lineTo(destX, destY)
+  this.ctx.closePath()
+  this.ctx.stroke()
+}
 }
