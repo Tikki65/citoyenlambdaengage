@@ -198,10 +198,10 @@ canvas{
 	border: 1px solid black;
 }
 #clearButton{
-	margin-left: 5px;
+	margin-left: 15px;
 }
 #saveButton{
-	margin-left: 5px;
+	margin-left: 15px;
 }
 /*--------------------------------------------------------------Smartphones-------------------------------------------------------------*/
 @media (max-width:1200px) {
