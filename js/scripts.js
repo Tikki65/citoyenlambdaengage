@@ -5,4 +5,9 @@ window.onload =(){
     e.preventDefault()
     canvas.effacer()
   })
+
+  document.querySelector("enregistrer").addEventListener("click". (e) =>{
+    e.preventDefault()
+    canvas.genererImage()
+  })
 }
