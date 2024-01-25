@@ -194,7 +194,8 @@ span {
 	color : #AA8866;
 }
 #signatureCanvas{
-	padding-left:5%;
+	padding-left:5px;
+	border: 1px solid #000;
 }
 /*--------------------------------------------------------------Smartphones-------------------------------------------------------------*/
 @media (max-width:1200px) {
