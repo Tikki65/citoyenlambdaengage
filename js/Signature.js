@@ -24,8 +24,18 @@ class Signature{
         let currX = eclientX - this.canvas.offsetLeft
         let currY = eclientY - this.canvas.offsetTop
         this.draw(this.prevX, this.prevY, currX, currY)
+        this.prevX = currX
+        this.prevY = currY
       }
-    })                           
+    })
+
+    this.canvas.addEventListener("mouseup", () =>{
+      this.sign = false
+    })
+
+    this.canvas.addEventListener("mouseout", () =>{
+      this.sign = false
+    })
   }
 draw(depX, depY, destX, destY){
   this.ctx.beginPath()
@@ -34,4 +44,6 @@ draw(depX, depY, destX, destY){
   this.ctx.closePath()
   this.ctx.stroke()
 }
+  effacer(){
+  this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
 }
