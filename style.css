@@ -243,4 +243,7 @@ canvas{
         /*opacity: 0;*/
         transition: .3sec ease;
     }
+    .img {
+	width: 100%;
+    }
 }
