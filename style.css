@@ -72,7 +72,8 @@ h3 {
 	text-decoration: underline;	
 }
 li {
-	color: green;	
+	color: green;
+	margin: 10px;	
 }
 tr, td, th {
 	text-align: center;
