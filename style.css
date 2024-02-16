@@ -152,13 +152,13 @@ span {
 		margin: auto;
 		padding: 0px 15px 0px 15px;
 }
-.img {
-	max-width: 10%;
-	height: auto;
+img {
+	max-width: 50%;
 }
-.img_resp {
-	width: 10%;
+.imgfull {
+	max-width: auto;
 }
+
 .underline {
 	text-decoration: underline;
 	color: green;
@@ -245,6 +245,9 @@ canvas{
         transition: .3sec ease;
     }
     .img_resp {
-	width: 100%;
+		width: 100%;
     }
+	.imgcampagne {
+		width: 100%;
+	}
 }
