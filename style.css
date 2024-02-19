@@ -23,7 +23,7 @@
     	z-index: 100;
 }
 #logocfh {
-    	max-height: 80px;
+    	max-height: 90px;
 }
 #logocle {
 		/*max-height: 10px;*/
@@ -46,7 +46,7 @@
     	right: 5%;
     	font-size: 2.8rem;
     	color: green;
-   	cursor: pointer;
+   		cursor: pointer;
     	display: none;
     	align-items: center;
 }
