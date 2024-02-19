@@ -159,7 +159,7 @@ img {
 	/*max-width: 50%;*/
 }
 .imgfull {
-	max-width: auto;
+	max-width: 80%;
 }
 
 .underline {
@@ -207,7 +207,7 @@ canvas{
 #saveButton{
 	margin-left: 15px;
 }
-/*--------------------------------------------------------------Smartphones-------------------------------------------------------------*/
+/*--------------------------------------------------------------Tablettes-------------------------------------------------------------*/
 @media (max-width:1200px) {
     
     .icons {
@@ -245,6 +245,9 @@ canvas{
         /*opacity: 0;*/
         transition: .3sec ease;
     }
+	.imgfull {
+		width: 100%;
+	}
     .img_resp {
 		width: 100%;
     }
@@ -301,13 +304,16 @@ canvas{
 	#logocle {
 		max-width: 60%;
 	}
-	img {
-		width: 100%;
+	/*img {
+		width: 100%;*/
 	}
     .img_resp {
 		width: 100%;
     }
 	.imgcampagne {
+		width: 100%;
+	}
+	.imgfull {
 		width: 100%;
 	}
 }
