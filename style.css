@@ -156,10 +156,13 @@ span {
 		padding: 0px 15px 0px 15px;
 }
 img {
-	max-width: 80%;*/
+	max-width: 80%;
 }
 .imgfull {
-	max-width: 80%;
+	max-width: 100%;
+}
+.img_resp {
+	max-width: 45%;
 }
 
 .underline {
