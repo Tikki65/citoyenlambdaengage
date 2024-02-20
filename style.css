@@ -248,6 +248,9 @@ canvas{
         /*opacity: 0;*/
         transition: .3sec ease;
     }
+	img {
+		max-width: 80%;
+	}
 	.imgfull {
 		width: 100%;
 	}
@@ -307,8 +310,8 @@ canvas{
 	#logocle {
 		max-width: 60%;
 	}
-	/*img {
-		width: 100%;*/
+	img {
+		width: 100%;
 	}
     .img_resp {
 		width: 100%;
