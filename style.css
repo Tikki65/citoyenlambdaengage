@@ -251,13 +251,13 @@ canvas{
 		max-width: 80%;
 	}
 	.imgfull {
-		width: 100%;
+		max-width: 100%;
 	}
     .img_resp {
-		width: 100%;
+		max-width: 100%;
     }
 	.imgcampagne {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 /*--------------------------------------------------------------Smartphones-------------------------------------------------------------*/
@@ -310,18 +310,18 @@ canvas{
 		max-width: 60%;
 	}
 	img {
-		width: 100%;
+		max-width: 100%;
 	}
 	.img_resp {
-		width: 100%;
+		max-width: 100%;
 	    }
 	.imgcampagne {
-		width: 100%;
+		max-width: 100%;
 	}
 	.imgfull {
-		width: 100%;
+		max-width: 100%;
 	}
 	#compteur {
-		max-width : 25%;
+		max-width : 40%;
 	}
 }
