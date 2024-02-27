@@ -22,6 +22,9 @@
     	text-align: center;*/
     	z-index: 100;
 }
+footer {
+	background: light-grey;
+}
 #logocfh {
     	max-height: 80px;
 }
