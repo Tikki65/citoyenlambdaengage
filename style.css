@@ -78,7 +78,7 @@ h3 {
 	color: #C86400;
 	text-decoration: underline;	
 }
-li {
+ol, li {
 	color: green;
 	margin: 10px;	
 }
