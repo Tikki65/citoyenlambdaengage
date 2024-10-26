@@ -7,7 +7,7 @@
 	max-width: 100%;
 	height: auto;
     	margin-left: 10%;
-    	margin-right: 10%
+    	margin-right: 10%;
 }
 .header {
     	position: fixed;
@@ -19,8 +19,8 @@
     	border-bottom: solid orange;
     	display: flex;
     	justify-content: space-between;
-    	text-align: center;*/
-    	z-index: 100;
+    	text-align: center;
+	/*z-index: 100;*/
 }
 .footer {
 	background-color: light-grey;
@@ -50,7 +50,7 @@
     	right: 5%;
     	font-size: 2.8rem;
     	color: green;
-   		cursor: pointer;
+   	cursor: pointer;
     	display: none;
     	align-items: center;
 }
@@ -66,14 +66,16 @@ p {
     	text-align: justify;
 	color: green;
 	padding: 10px;
-	overflow: auto;}
+	overflow: auto;
+}
 h1 {
 	text-align: center;
 	color: 	#C86814;
 }	
 h2 {
 	color: #F5C51D;
-	text-shadow: 0.02em 0.05em 0.0em brown;/}
+	text-shadow: 0.02em 0.05em 0.0em brown;
+}
 h3 {
 	color: #C86400;
 	text-decoration: underline;	
@@ -84,7 +86,8 @@ ol, li {
 }
 tr, td, th {
 	text-align: center;
-	padding: 0px 0px 0px 15px;color: green;
+	padding: 0px 0px 0px 15px;
+	color: green;
 }
 video {
 	max-width: 80%;
