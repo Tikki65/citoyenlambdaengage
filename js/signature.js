@@ -41,7 +41,7 @@ function clearCanvas() {
 // Enregistrer la signature (peut être envoyée à un serveur par exemple)
 function saveSignature() {
     var signatureDataURL = canvas.toDataURL(); // Retourne les données au format image (base64)
-    console.log(signatureDataURL);
+    document.getElementById('signature_image').value = signatureDataURL;
     // Vous pouvez envoyer les données au serveur à ce stade
 }
 
@@ -58,7 +58,7 @@ canvas.addEventListener('mouseout', stopDrawing);
 // Fonction pour envoyer la signature vers le serveur
 function sendSignatureToServer() {
     var signatureDataURL = canvas.toDataURL();
-    console.log(signatureDataURL)
+    document.getElementById('signature_image').value = signatureDataURL;
 
     fetch('upload_signature.php', {
         method: 'HTTP POST',
