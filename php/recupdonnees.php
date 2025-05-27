@@ -42,15 +42,16 @@ $pdf->Output('F', $pdfPath);
 $mail = new PHPMailer(true);
 try {
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'ssl0.ovh.net';
     $mail->SMTPAuth = true;
-    $mail->Username = 'eric.victor.dumont@gmail.com';
-    $mail->Password = 'awxxsjvzxahwfsjo';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->Username = 'contact@citoyenlambdaengage.be';
+    $mail->Password = '20Citoyem@24'; // Remplace par le vrai mot de passe de la boîte mail
+    $mail->SMTPSecure = 'ssl'; // ou 'tls' si tu as une erreur
+    $mail->Port = 465; // 587 si tu mets 'tls'
 
-    $mail->setFrom('contact@citoyenlambda.be', 'Formulaire Pétition');
+    $mail->setFrom('contact@citoyenlambdaengage.be', 'Formulaire Pétition');
     $mail->addAddress('eric.victor.dumont@gmail.com');
+    $mail->addAddress('contact@citoyenlambdaengage.be');
     $mail->Subject = 'Formulaire signé';
     $mail->Body = 'Veuillez trouver ci-joint le formulaire PDF signé.';
     $mail->addAttachment($pdfPath);
